@@ -1,0 +1,222 @@
+
+
+@font-face {
+  font-family: IranSans;
+  src: url("../fonts/Iransans/iransansdn.eot");
+  src: url("../fonts/Iransans/iransansdn.eot") format("embedded-opentype"),
+    url("../fonts/Iransans/iransansdn.woff") format("woff"),
+    url("../fonts/Iransans/iransansdn.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@mixin btn-move-background($width, $height, $color, $hover) {
+  width: $width;
+  height: $height;
+  background-image: linear-gradient(to right, $color 50%, $hover 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin  btn-them-gradiant-vertical($width,$height, $them-bg , $them-hover , $btn-color , $btn-hover){
+  cursor: pointer;
+  display: inline-block;
+  width: $width;
+  height: $height;
+  line-height: $height;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  appearance: none;
+  background-color:  $them-bg;
+  color: $btn-color;
+  position: relative;
+  border: none;
+  z-index: 1;
+  transition:all 0.4s ease-in-out;
+  &::before{
+    content: "";
+    background-color: $them-hover;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    transition:all 0.6s ease-in-out;
+    top: 0;
+    left: 0;
+    right: auto;
+    z-index: -1;
+  }
+  &:hover{
+    color: $btn-hover;
+    &::before{
+      width: 100%;
+      right: 0;
+      left: auto;
+    }
+  }
+  &:active{
+    background-color: $them-hover;
+    color: $btn-hover;
+    box-shadow: none;
+  }
+  &:focus{
+    background-color: $them-hover;
+    color: $btn-hover;
+    box-shadow: none;
+  }
+}
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin scroll-X {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  position: relative;
+  margin: 0 auto;
+  @include flex(row, space-between, center);
+  flex-wrap: nowrap;
+  &::-webkit-scrollbar {
+    height: 7px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #5a5a5a;
+    border: 4px solid transparent;
+    background-clip: content-box;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+}
+
+@mixin background-properti {
+  background: {
+    size: cover;
+    position: center;
+    repeat: no-repeat;
+  }
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: $iranSans-font;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow-x: hidden;
+  color: $color-black;
+  background: $color-white;
+  // &::-webkit-scrollbar {
+  //   width: 10px;
+  // }
+  // &::-webkit-scrollbar-track {
+  //   background: $color-blue;
+  //   border: 4px solid transparent;
+  //   background-clip: content-box;
+  // }
+  // &::-webkit-scrollbar-thumb {
+  //   background: $color-night;
+  //   border-radius: 10px;
+  // }
+  // &::-webkit-scrollbar-button{
+  //  background-color: $color-night;
+   
+  // }
+}
+h1 {
+  font-size: $header1;
+  font-weight: bold;
+}
+h2 {
+  font-size: $header2;
+}
+h3 {
+  font-size: $header3;
+}
+h4,
+h5 {
+  font-size: $header4;
+}
+li,
+button,
+p,
+a {
+  font-size: $text;
+}
+
+a,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  text-decoration: none;
+
+  @media only screen and (max-width: 768px) {
+    cursor: default !important;
+    border: none;
+    outline: none;
+  }
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+
+.warning-alert{
+  width: 100%;
+  min-height: 50px;
+  background-color: $color-orange;
+  text-align: center;
+  line-height: 50px;
+  color: $color-light-gray;
+}
+
+.success-alert{
+  width: 100%;
+  min-height: 50px;
+  background-color: $color-green;
+  text-align: center;
+  line-height: 50px;
+  color: $color-light-gray;
+}
+.danger-alert{
+  width: 100%;
+  min-height: 50px;
+  background-color: $color-red;
+  text-align: center;
+  line-height: 50px;
+  color: $color-light-gray;
+}
+

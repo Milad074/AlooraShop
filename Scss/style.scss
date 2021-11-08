@@ -1,0 +1,40 @@
+$header1: 2.6rem;
+$header2: 2.5rem;
+$header3: 2rem;
+$header4: 1.8rem;
+$text: 1.5rem;
+
+$iranSans-font:IranSans;
+
+$color-white: #ffffff;
+$color-light: #f1f5f8;
+$color-black: #121212;
+$color-night: #001632;
+
+$color-red: #e53935;
+$color-blue: #2196f3;
+$color-light-blue:#afcfcd;
+$color-pink: #e91e63;
+$color-pale-pink:#f7d6d0; 
+$color-Gentle-pink:#ffc5d0;
+$color-Gentle-pink2:#f2c5e0;
+$color-green: #43a047;
+$color-purple: #9c27b0;
+$color-orange: #fb8c00;
+$color-indigo: #6633ff;
+$color-light-gray:#ebe4d7;
+$button-color:#262613;
+$button-hover:#d97e87;
+
+
+$shadow-normal: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+$shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+@import "base";
+@import "header";
+@import "main";
+@import "footer";
+@import "acounting";
+@import "products";
+@import "media-qurey"

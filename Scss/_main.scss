@@ -1,0 +1,552 @@
+.main-slider {
+  .sliders {
+    position: relative;
+
+    .slideshow {
+      &-item {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        display: none;
+      }
+      &-image {
+        display: inline-block;
+        width: 100%;
+        height: 70vh;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: inline;
+        }
+      }
+      &-text {
+        position: absolute;
+        top: 5%;
+        padding: 1rem 3rem;
+        z-index: 3;
+        //right: 5%;
+        &-toptitle {
+          font-size: 20px;
+          color: $color-orange;
+        }
+        &-megatitle {
+          font-size: 4rem;
+          color: $color-black;
+        }
+        &-subtitle {
+          font-size: 16px;
+          color: $color-black;
+        }
+        &-btn {
+          a {
+            @include btn-them-gradiant-vertical(
+              160px,
+              50px,
+              $button-color,
+              $button-hover,
+              $color-orange,
+              $color-light
+            );
+          }
+        }
+      }
+      .text-right {
+        right: 5%;
+      }
+      .text-left {
+        left: 5%;
+      }
+      .active {
+        display: block;
+        animation: fade 0.8s ease-in;
+      }
+    }
+    .next-slide,
+    .pre-slide {
+      position: absolute;
+      top: 50%;
+      left: 1%;
+      transform: translate(0%, -50%);
+      font-size: 2rem;
+      cursor: pointer;
+    }
+    .next-slide {
+      right: 1%;
+    }
+  }
+}
+
+.colections {
+  .boxes {
+    min-height: 80vh;
+    //position: relative;
+    div {
+      margin: 1rem 0;
+      position: relative;
+      //height: 450px;
+      a {
+        display: inline-block;
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+        //border: 1px solid gray;
+        &:hover {
+          img {
+            transform: scale(1.1);
+          }
+        }
+      }
+      &:nth-child(even) {
+        .figure {
+          margin-top: 7rem;
+          //position: relative;
+          .colection-text {
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            width: 100%;
+          }
+        }
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.6s ease-in-out;
+    }
+    .colection-text {
+      text-align: center;
+      line-height: 45px;
+      padding-top: 1rem;
+    }
+  }
+}
+
+.top-products {
+  min-height: 100vh;
+  background-color: $color-light-gray;
+  position: relative;
+  .products-text {
+    .fw-bold {
+      color: $color-night;
+      cursor: pointer;
+      transition: color 0.7s ease-in-out;
+      display: inline;
+      &:hover {
+        color: $color-orange;
+      }
+    }
+  }
+  .container {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    .wrapper {
+      @include scroll-X;
+      white-space: nowrap;
+      li {
+        display: inline-block;
+        /* padding: 10px; */
+        margin: 0 0.5rem;
+      }
+    }
+  }
+
+  #click2,
+  #click {
+    visibility: hidden;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  #click {
+    right: 0%;
+    border-right: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+}
+//This Style for that products has tolltip and icon
+.product-container {
+  text-align: center;
+  padding: 15px;
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+  overflow: hidden;
+  .product-cart {
+    &-image {
+      position: relative;
+      img {
+        max-width: 100%;
+        max-height: 350px;
+        margin: auto;
+        transition: opacity 0.6s ease-in-out;
+      }
+      .overlay-image {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        transition: opacity 0.6s ease-in-out;
+      }
+    }
+    &-overlay {
+      @include flex(column, space-between, flex-start);
+      position: absolute;
+      top: 0%;
+      right: 0%;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.6s ease-in-out;
+      .tolltip {
+        position: relative;
+        display: inline-block;
+        .tolltip-icon {
+          @include btn-move-background(
+            35px,
+            35px,
+            $button-hover,
+            $button-color
+          );
+          text-align: center;
+          line-height: 35px;
+          border-radius: 50%;
+          font-size: 16px;
+          color: $color-light;
+          &:hover {
+            background-position: left bottom;
+          }
+        }
+        .tolltip-text {
+          visibility: hidden;
+          font-size: 10px;
+          background-color: $color-black;
+          color: $color-light;
+          padding: 5px;
+          width: 120px;
+          border-radius: 6px;
+          position: absolute;
+          right: 105%;
+          margin-top: 6px;
+          z-index: 3;
+          opacity: 0;
+          transition: opacity 0.6s ease-in-out;
+          &::after {
+            content: "";
+            position: absolute;
+            right: 105%;
+          }
+        }
+        &:hover {
+          .tolltip-text {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+    }
+    &-info {
+      line-height: 60px;
+      a {
+        font-size: $header3;
+        color: $color-night;
+        transition: all 0.6s ease-in;
+        &:hover {
+          color: $button-hover;
+        }
+      }
+      span {
+        color: #642401;
+      }
+      .product-discount {
+        background-color: red;
+        color: white;
+        display: inline-block;
+        width: 60px;
+        height: 45px;
+        font-size: 16px;
+        //padding: 1rem;
+        line-height: 50px;
+        border-radius: 10px;
+        transform: translateX(20px);
+      }
+    }
+    &:hover,
+    &:active {
+      .product-cart-overlay {
+        opacity: 1;
+        visibility: visible;
+        .tolltip-icon {
+          animation: slide-in-top 0.8s ease-in-out;
+        }
+      }
+    }
+  }
+  &:hover {
+    box-shadow: 0px 5px 5px rgba($color: #000000, $alpha: 0.6);
+    .product-cart-image {
+      img {
+        opacity: 0;
+      }
+    }
+    .overlay-image {
+      opacity: 1 !important;
+    }
+  }
+}
+
+.categories {
+  .category-tabs {
+    li {
+      button {
+        position: relative;
+        display: block;
+        padding: 10px;
+        color: #aaa;
+        font-weight: 800;
+        margin: 0 10px;
+        cursor: pointer;
+        transition: all 2s;
+        &::after {
+          transition: all 0.5s;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          margin: 0;
+          width: 0%;
+          content: ".";
+          color: transparent;
+          background: #aaa;
+          height: 1px;
+          text-align: left;
+          opacity: 0;
+        }
+        &::before {
+          transition: all 0.5s;
+        }
+        &:hover {
+          color: #fff;
+          z-index: 1;
+        }
+        &:hover::after {
+          width: 100%;
+          z-index: -10;
+          animation: fill 1s forwards;
+          opacity: 1;
+        }
+      }
+      .active {
+        color: #fff;
+        background: #333;
+      }
+    }
+  }
+  .category-image {
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    &-text {
+      position: absolute;
+      bottom: 2%;
+      right: 5%;
+      line-height: 40px;
+      a {
+        color: $color-white;
+      }
+    }
+  }
+}
+
+.hair-care {
+  background-color: $color-light-gray;
+  //min-height: 90vh;
+  margin-bottom: 5rem;
+  .slide {
+    position: relative;
+    .item {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      display: none;
+      .row {
+        display: flex;
+        .texts {
+          height: 80%;
+          @include flex(column, space-around, flex-start);
+          padding: 1rem 2rem 2rem 3rem;
+          .rated {
+            color: goldenrod;
+          }
+          .onrated {
+            color: rgb(255, 255, 255);
+          }
+        }
+        .hair-care-image {
+          width: 80%;
+          padding-left: 1rem;
+        }
+      }
+      a {
+        color: $color-black;
+        transition: color 0.6s ease-in-out;
+        &:hover {
+          color: $color-orange;
+        }
+      }
+    }
+    .active {
+      display: block;
+      animation: fade 0.8s ease-in;
+    }
+    .right-slide,
+    .left-slide {
+      position: absolute;
+      bottom: 7%;
+      right: 5%;
+      font-size: 1.5rem;
+      cursor: pointer;
+      margin-top: 3rem;
+    }
+    .left-slide {
+      right: 8%;
+    }
+  }
+}
+
+.baner-liquid {
+  .content-baner {
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+    margin: 2rem 0;
+    .figure {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        transition: all 0.7s ease-in-out;
+      }
+      .liguid-bg { 
+        @include btn-move-background(
+          80%,
+          80px,
+          rgba(0, 0, 0, 0.562),
+          rgba(255, 255, 25, 0.4)
+        );
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+      }
+      .liguid-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        a {
+          color: $color-night !important;
+          cursor: pointer;
+          transition: color 0.6s ease-in-out;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        img {
+          transform: scale(1.2);
+        }
+        .liguid-bg {
+          background-position: left bottom;
+        }
+        a {
+          color: $color-white !important;
+        }
+      }
+    }
+  }
+}
+
+.insta-link {
+  background-color: $color-light-gray;
+  min-height: 40vh;
+  .row {
+    text-align: center;
+    .insta-icon {
+      img {
+        height: 80px;
+        margin: auto;
+      }
+    }
+    .insta-link-title {
+      margin: 1rem auto;
+      a{
+         @include btn-them-gradiant-vertical(
+              60%,
+              80px,
+              $button-color,
+              $button-hover,
+              $color-orange,
+              $color-light
+            );
+      }
+    }
+    .insta-text {
+      p {
+        text-transform: uppercase;
+        letter-spacing: 12px;
+      }
+    }
+  }
+}
+
+.news {
+  .box-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    @include flex(column, space-between, center);
+    height: 320px;
+    .news-date {
+      color: #752b03;
+    }
+    .news-title {
+      a {
+        color: $color-night;
+        transition: color 0.7s ease-in-out;
+        font-size: 1.8rem;
+        &:hover {
+          color: #752b03;
+        }
+      }
+    }
+    .news-text {
+      color: #333;
+      p {
+        font-size: 18px;
+      }
+    }
+    .read-more {
+      a {
+        @include btn-them-gradiant-vertical(
+              150px,
+              50px,
+              $button-color,
+              $button-hover,
+              $color-orange,
+              $color-light
+            );
+      }
+    }
+  }
+}

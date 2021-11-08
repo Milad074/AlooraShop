@@ -1,0 +1,268 @@
+#acounting {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 2rem;
+
+  .acounting-title {
+    color: gray;
+  }
+
+  .acounting-product-image {
+    min-height: 90vh;
+    background-image: url("../Images/slide3-1512x.jpg");
+    @include background-properti;
+    position: relative;
+
+    .acounting-product {
+      width: 100%;
+      &-content {
+        position: absolute;
+        width: 70%;
+        bottom: 10%;
+        right: 5%;
+      }
+      &-title {
+        font-size: 3rem;
+        color: $color-night;
+      }
+      &-discreption {
+        font-size: 18px;
+        color: $color-black;
+      }
+      &-button {
+        a {
+          @include btn-them-gradiant-vertical(
+            160px,
+            60px,
+            $button-color,
+            $button-hover,
+            $color-orange,
+            $color-light
+          );
+        }
+      }
+    }
+  }
+
+  .acounting-form {
+    width: 100%;
+    min-height: 90vh;
+    background-color: $color-light-gray;
+    padding: 0 2rem;
+    .form-group {
+      margin: 2rem 0;
+      .form-group-input {
+        padding: 5px 15px;
+        width: 300px;
+        margin-right: 0;
+        margin-left: 5px;
+        background: transparent;
+        color: $color-night;
+        border: none;
+        border: 1px solid $color-night;
+        transition: all 0.5s ease;
+        &:focus {
+          background-color: $color-light-blue;
+          border: 1px solid $color-night;
+          outline: none;
+        }
+      }
+      .for-validation {
+        color: red;
+        font-weight: bold;
+        margin-right: 17px;
+      }
+    }
+
+    .form-links {
+      a:hover {
+        i {
+          transform: translateX(-10px);
+        }
+      }
+      span {
+        color: $color-night;
+      }
+      i {
+        color: $color-night;
+        transition: all 0.6s ease-in;
+        margin-right: 0.5rem;
+      }
+    }
+
+    .form-group-icon {
+      @include btn-them-gradiant-vertical(
+        40px,
+        40px,
+        $button-color,
+        $button-hover,
+        $color-orange,
+        $color-light
+      );
+    }
+
+    .form-group-btn {
+      margin: 1rem;
+      button {
+        @include btn-them-gradiant-vertical(
+          100px,
+          40px,
+          $button-color,
+          $button-hover,
+          $color-orange,
+          $color-light
+        );
+      }
+    }
+    .social-icon {
+      @include flex(row, space-around, center);
+      width: 100%;
+      height: 80px;
+      a {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        border: 1px solid gray;
+        line-height: 60px;
+        text-align: center;
+        font-size: 2rem;
+        transition: border 0.6s linear;
+        i {
+          color: rgba($color: #000000, $alpha: 0.5);
+          transition: color 0.6s linear;
+        }
+        &:hover {
+          border: 1px solid $color-night;
+          i {
+            color: $color-night;
+          }
+        }
+      }
+    }
+  }
+}
+
+#active-acount {
+  .active-acount-btn {
+    a {
+      @include btn-them-gradiant-vertical(
+        20%,
+        40px,
+        $button-color,
+        $button-hover,
+        $color-orange,
+        $color-light
+      );
+    }
+  }
+}
+
+#user-panel {
+  min-height: 80vh;
+  .panel-sidebar {
+    @include flex(column, space-around, flex-start);
+    width: 100%;
+    //height: 100%;
+    &-top {
+      background-color: $color-light-gray;
+      width: 100%;
+      padding: 1rem 2rem;
+      text-align: center;
+      .user-image {
+        padding: 1rem;
+        margin-bottom: 1rem;
+        img {
+          max-width: 200px;
+          max-height: 200px;
+          margin: auto;
+        }
+      }
+    }
+    &-bottom {
+      @include flex(column, space-between, flex-start);
+      width: 100%;
+      margin-top: 2rem;
+      min-height: 300px;
+      padding: 1rem 2rem;
+      background-color: $color-light-blue;
+      .sidebar-title {
+        width: 100%;
+        text-align: center;
+        padding: 2rem;
+        color: $color-night;
+      }
+      .sidebar-featured {
+        @include flex(column, space-between, flex-start);
+        width: 100%;
+        height: 100%;
+        a {
+          padding: 5px;
+          font-size: 1.3rem;
+          color: $button-color;
+          transition: color 0.5s ease-in-out;
+          &:hover {
+            color: $button-hover;
+          }
+        }
+      }
+    }
+  }
+
+  .panel-dashbord {
+    background: linear-gradient(90deg, $color-light-gray, $color-light-blue);
+    .user-information {
+      div {
+        @include flex(row, flex-start, baseline);
+        flex-wrap: wrap;
+        padding: 0.5rem 1rem;
+      }
+      span {
+        display: block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background-color: $color-light-gray;
+        color: $color-night;
+        border: 1px solid $color-night;
+        font-size: 1.2rem;
+        margin-left: 10px;
+      }
+    }
+    .acounting-form {
+      background-color: transparent;
+    }
+  }
+  .smal-panel {
+    height: 500px;
+  }
+}
+
+.breadcrumb {
+  width: 100%;
+  min-height: 40px;
+  background-color: #fbece3;
+  div {
+    margin: auto;
+    font-size: 20px;
+    padding: 1rem;
+    a {
+      color: $color-orange;
+    }
+  }
+}
+.eye {
+  @include btn-move-background(40px, 40px, $button-hover, $button-color);
+  //margin-right: 1rem;
+  color: $color-light;
+  line-height: 40px;
+  font-size: 1rem;
+  text-align: center;
+  transform: none;
+  z-index: 5;
+  border-radius: 50% !important;
+  cursor: pointer;
+  &:hover {
+    background-position: left bottom;
+  }
+}

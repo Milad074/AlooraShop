@@ -1,0 +1,2754 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فروشگاه آلورا</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./css/reset.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/ionicon.min.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <!-- BootStrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!--My Personol Styles-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Start:Social icon & Search box & Account-->
+    <!--  This Section will be hidden in  850px-->
+    <nav
+      class="header-top navbar navbar-expand navbar-light d-block none-navbar"
+    >
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="#" title="آلورا در اینستاگرام"
+            ><i class="icon fab fa-instagram"></i
+          ></a>
+          <a href="#" title="آلورا در واتس آپ"
+            ><i class="icon fab fa-whatsapp"></i
+          ></a>
+          <a href="#" title="آلورا در تلگرام"
+            ><i class="icon fab fa-telegram-plane"></i
+          ></a>
+          <button
+            type="button"
+            class="icon"
+            title="جستجوی محصول"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvas-forSearch"
+            aria-controls="offcanvas-forSearch"
+          >
+            <i class="fas fa-search"></i>
+          </button>
+          <div
+            class="offcanvas offcanvas-top"
+            tabindex="-1"
+            id="offcanvas-forSearch"
+            aria-labelledby="offcanvasTopLabel"
+          >
+            <div class="offcanvas-header">
+              <h6 id="offcanvasTopLabel">
+                نام محصول , دسته یا برند مورد نظر را وارد کنید
+              </h6>
+              <button
+                type="button"
+                class="btn-close text-reset mx-1"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body search-body">
+              <form action="#" method="POST">
+                <div class="input-group">
+                  <button type="submit">
+                    <i class="ion-md-search"></i>
+                  </button>
+                  <input type="text" id="search" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-nav">
+          <a class="icon nav-item nav-link" href="UserPanel.html"
+            >حساب کاربری من <i class="fas fa-user"></i
+          ></a>
+          <a class="icon nav-item nav-link" href="Login.html"
+            >ورود <i class="fas fa-lock"></i
+          ></a>
+          <a class="icon nav-item nav-link" href="Register.html"
+            >ثبت نام <i class="fas fa-lock"></i
+          ></a>
+          <a class="icon nav-item nav-link" title="سبد خرید" href="#"
+            >سبد خرید <i class="fas fa-shopping-cart"></i
+          ></a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header sticky-top mb-4">
+      <div class="container">
+        <div class="wrapper">
+          <div class="header-item-right">
+            <button type="button" class="menu-mobile-trigger">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+
+          <!-- Section: Navbar Menu -->
+          <div class="header-item-center">
+            <div class="overlay"></div>
+            <nav class="menu">
+              <div class="menu-mobile-header">
+                <button type="button" class="menu-mobile-arrow">
+                  <i class="ion ion-ios-arrow-back"></i>
+                </button>
+                <div class="menu-mobile-title"></div>
+                <button type="button" class="menu-mobile-close">
+                  <i class="ion ion-ios-close"></i>
+                </button>
+              </div>
+              <ul class="menu-section">
+                <!---------------  Social icons  ----------------->
+                <li class="lg-item-none d-none">
+                  <nav class="navbar navbar-expand">
+                    <div class="container">
+                      <div class="navbar-nav">
+                        <a class="icon nav-item nav-link" href="#"
+                          ><i class="fab fa-instagram"></i
+                        ></a>
+                        <a class="icon nav-item nav-link" href="#"
+                          ><i class="fab fa-whatsapp"></i
+                        ></a>
+                        <a class="icon nav-item nav-link" href="#"
+                          ><i class="fab fa-telegram-plane"></i
+                        ></a>
+                        <a class="icon nav-item nav-link" href="#"
+                          ><i class="fas fa-shopping-cart"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </nav>
+                </li>
+                <!---------------  Search  ----------------->
+                <li class="lg-item-none d-none">
+                  <div class="">
+                    <form action="#" method="POST">
+                      <div class="search-body">
+                        <input
+                          type="text"
+                          class=""
+                          placeholder="نام محصول یا دسته بندی را وارد کنید"
+                        />
+                        <button type="submit">
+                          <i class="icon ion-md-search"></i>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </li>
+                <li><a href="index.html">خانه</a></li>
+                <!---------------  makeup products  ----------------->
+                <li class="menu-item-has-children">
+                  <a href="#">آرایشی<i class="ion ion-ios-arrow-down"></i></a>
+                  <div class="menu-subs menu-mega menu-column-4">
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">آرایش و گریم</h4></a>
+                      <ul class="menu-section">
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">محصولات پوستی</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">محصولات مو</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">مردانه</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">محصولات برقی</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <!-- <img src="./asset/image-5.jpg" class="responsive" alt="Shop Product"> -->
+                      <a href="#"><h4 class="title">عطر</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">متفرقه</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!----------------  Skin products  -------------------->
+                <li class="menu-item-has-children">
+                  <a href="#">پوست<i class="ion ion-ios-arrow-down"></i></a>
+                  <div class="menu-subs menu-mega menu-column-4">
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">آرایش و گریم</h4></a>
+                      <ul class="menu-section">
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">محصولات پوستی</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">محصولات مو</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">مردانه</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">محصولات برقی</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <!-- <img src="./asset/image-5.jpg" class="responsive" alt="Shop Product"> -->
+                      <a href="#"><h4 class="title">عطر</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">متفرقه</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!----------------  Hair products  -------------------->
+                <li class="menu-item-has-children">
+                  <a href="#">مو<i class="ion ion-ios-arrow-down"></i></a>
+                  <div class="menu-subs menu-mega menu-column-4">
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">آرایش و گریم</h4></a>
+                      <ul class="menu-section">
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">محصولات پوستی</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">محصولات مو</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">مردانه</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">محصولات برقی</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <!-- <img src="./asset/image-5.jpg" class="responsive" alt="Shop Product"> -->
+                      <a href="#"><h4 class="title">عطر</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">متفرقه</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!----------------  Electrical products  -------------------->
+                <li class="menu-item-has-children">
+                  <a href="#"
+                    >لوازم برقی<i class="ion ion-ios-arrow-down"></i
+                  ></a>
+                  <div class="menu-subs menu-mega menu-column-4">
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">آرایش و گریم</h4></a>
+                      <ul class="menu-section">
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">محصولات پوستی</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">محصولات مو</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">مردانه</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">محصولات برقی</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <!-- <img src="./asset/image-5.jpg" class="responsive" alt="Shop Product"> -->
+                      <a href="#"><h4 class="title">عطر</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">متفرقه</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!----------------  Men's products  --------------------->
+                <li class="menu-item-has-children">
+                  <a href="#">مردانه<i class="ion ion-ios-arrow-down"></i></a>
+                  <div class="menu-subs menu-mega menu-column-4">
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">آرایش و گریم</h4></a>
+                      <ul class="menu-section">
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">محصولات پوستی</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">محصولات مو</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">مردانه</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">محصولات برقی</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <!-- <img src="./asset/image-5.jpg" class="responsive" alt="Shop Product"> -->
+                      <a href="#"><h4 class="title">عطر</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">متفرقه</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!----------------  Other  -------------------------->
+                <li class="menu-item-has-children">
+                  <a href="">متفرقه<i class="ion ion-ios-arrow-down"></i></a>
+                  <div class="menu-subs menu-column-1">
+                    <ul>
+                      <li><a href="About_us.html">درباره ما</a></li>
+                      <li><a href="Contact_Us.html">تماس با ما</a></li>
+                      <li><a href="LookBook.html">مجله سلامت و زیبای</a></li>
+                      <li><a href="#">نقو برسی محصولات</a></li>
+                      <!-- <li><a href="#">لورم ایپسوم</a></li>
+											<li><a href="#">لورم ایپسوم</a></li> -->
+                    </ul>
+                  </div>
+                </li>
+                <!------------------  Account  -------------------------->
+                <li class="menu-item-has-children lg-item-none d-none">
+                  <a href="#"
+                    >حساب کاربری<i class="ion ion-ios-arrow-down"></i
+                  ></a>
+                  <div class="menu-subs menu-column-1">
+                    <ul>
+                      <li>
+                        <a href="Login.html"
+                          >ورود
+                          <i class="ion-ios-lock"></i>
+                        </a>
+                        <a href="Register.html">ثبت نام <i class="ion-ios-lock"></i> </a>
+                      </li>
+                      <li>
+                        <a href="UserPanel.html"
+                          >حساب کاربری من <i class="ion-ios-person"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >پیگیری سفارش <i class="ion-ios-card"></i
+                        ></a>
+                      </li>
+                      <!-- <li><a href="#">لورم ایپسوم</a></li> -->
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-----------------  LOGO Icon ----------------->
+          <div class="header-item-left">
+            <h1>
+              <a href="./index.html" class="brand">
+                <img src="Images/A3.jpg" alt="logo" />
+              </a>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Start:Main Slider Section -->
+      <section class="main-slider py-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="sliders">
+              <div class="slideshow">
+                <div class="slideshow-item active">
+                  <div>
+                    <!-- Product Image IS Here-->
+                    <div class="slideshow-image">
+                      <img src="/Images/slide1-1512x.jpg" alt="" />
+                    </div>
+                    <!-- Product Name , Discreption And Page Link-->
+                    <div class="slideshow-text text-right">
+                      <div class="slideshow-text-content">
+                        <ul>
+                          <!-- A Litele Text About Product-->
+                          <li>
+                            <p class="slideshow-text-toptitle">
+                              کالکشن ساده برای زمستان
+                            </p>
+                          </li>
+
+                          <!-- Product Or Colection Name-->
+                          <li>
+                            <h2 class="slideshow-text-megatitle">
+                              تعطیلات
+                              <br />
+                              جادوئی
+                            </h2>
+                          </li>
+
+                          <!-- A Litele Descreption For Product-->
+                          <li>
+                            <span class="slideshow-text-subtitle"
+                              >شامل 4 محصول با قیمت استثنای</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+
+                      <!-- Product Link Button-->
+                      <div class="slideshow-text-btn">
+                        <a href="#">
+                          <span>مشاهده کالکشن</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slideshow-item">
+                  <div>
+                    <!-- Product Image IS Here-->
+                    <div class="slideshow-image">
+                      <img src="/Images/slide2-1512x.jpg" alt="" />
+                    </div>
+                    <!-- Product Name , Discreption And Page Link-->
+                    <div class="slideshow-text text-left">
+                      <div class="slideshow-text-content">
+                        <ul>
+                          <!-- A Litele Text About Product-->
+                          <li>
+                            <p class="slideshow-text-toptitle">
+                              کالکشن ساده برای زمستان
+                            </p>
+                          </li>
+
+                          <!-- Product Or Colection Name-->
+                          <li>
+                            <h2 class="slideshow-text-megatitle">
+                              تعطیلات
+                              <br />
+                              جادوئی
+                            </h2>
+                          </li>
+
+                          <!-- A Litele Descreption For Product-->
+                          <li>
+                            <span class="slideshow-text-subtitle"
+                              >شامل 4 محصول با قیمت استثنای</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+
+                      <!-- Product Link Button-->
+                      <div class="slideshow-text-btn">
+                        <a href="#">
+                          <span>مشاهده کالکشن</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slideshow-item">
+                  <div>
+                    <!-- Product Image IS Here-->
+                    <div class="slideshow-image">
+                      <img src="/Images/slide3-1512x.jpg" alt="" />
+                    </div>
+                    <!-- Product Name , Discreption And Page Link-->
+                    <div class="slideshow-text text-left">
+                      <div class="slideshow-text-content">
+                        <ul>
+                          <!-- A Litele Text About Product-->
+                          <li>
+                            <p class="slideshow-text-toptitle">
+                              کالکشن ساده برای زمستان
+                            </p>
+                          </li>
+
+                          <!-- Product Or Colection Name-->
+                          <li>
+                            <h2 class="slideshow-text-megatitle">
+                              تعطیلات
+                              <br />
+                              جادوئی
+                            </h2>
+                          </li>
+
+                          <!-- A Litele Descreption For Product-->
+                          <li>
+                            <span class="slideshow-text-subtitle"
+                              >شامل 4 محصول با قیمت استثنای</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+
+                      <!-- Product Link Button-->
+                      <div class="slideshow-text-btn">
+                        <a href="#">
+                          <span>مشاهده کالکشن</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slideshow-item">
+                  <div>
+                    <!-- Product Image IS Here-->
+                    <div class="slideshow-image">
+                      <img src="/Images/slide4-1512x.jpg" alt="" />
+                    </div>
+                    <!-- Product Name , Discreption And Page Link-->
+                    <div class="slideshow-text text-right">
+                      <div class="slideshow-text-content">
+                        <ul>
+                          <!-- A Litele Text About Product-->
+                          <li>
+                            <p class="slideshow-text-toptitle">
+                              کالکشن ساده برای زمستان
+                            </p>
+                          </li>
+
+                          <!-- Product Or Colection Name-->
+                          <li>
+                            <h2 class="slideshow-text-megatitle">
+                              تعطیلات
+                              <br />
+                              جادوئی
+                            </h2>
+                          </li>
+
+                          <!-- A Litele Descreption For Product-->
+                          <li>
+                            <span class="slideshow-text-subtitle"
+                              >شامل 4 محصول با قیمت استثنای</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+
+                      <!-- Product Link Button-->
+                      <div class="slideshow-text-btn">
+                        <a href="#">
+                          <span>مشاهده کالکشن</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- button for next and prev-->
+              <div>
+                <div class="next-slide">&#10094;</div>
+                <div class="pre-slide">&#10095;</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End -->
+
+      <!-- Start:Colections Section -->
+      <section class="colections py-5">
+        <div class="container-fluid">
+          <div class="boxes row">
+            <div class="col-lg-4 col-md-6 col-sm-10 col-12">
+              <figure class="figure">
+                <a class="image-box" href="#">
+                  <img src="Images/p600-2.jpg" alt="" />
+                </a>
+                <figcaption class="colection-text">
+                  <h2 class="fw-bold">مراقبت های مو</h2>
+                  <p>توضیح کوتاه در مورد محصول</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 col-12">
+              <figure class="figure">
+                <a class="image-box" href="#">
+                  <img src="Images/p600-4.jpg" alt="" />
+                </a>
+                <figcaption class="colection-text">
+                  <h2 class="fw-bold">میکاپ</h2>
+                  <p>توضیح کوتاه در مورد محصول</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 col-12">
+              <figure class="figure">
+                <a class="image-box" href="#">
+                  <img src="Images/p600-5.jpg" alt="" />
+                </a>
+                <figcaption class="colection-text">
+                  <h2 class="fw-bold">کرم های صورت</h2>
+                  <p>توضیح کوتاه در مورد محصول</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End -->
+
+      <!-- Start:Top Products Section -->
+      <section class="top-products py-5">
+        <!-- Top Products Text-->
+        <article class="products-text text-center pb-4">
+          <p>بهترین ها برای شما</p>
+          <h2 class="fw-bold">پرفروش ترین محصولات</h2>
+          <p>
+            میتونی بیشتر انتظار داشته باشی اما کمتر پرداخت کنی با محصولات آلورا
+          </p>
+        </article>
+        <div class="container">
+          <div class="wrapper">
+            <div class="products">
+              <!--Start:Product Content-->
+              <ul class="topslide">
+                <li class="topslide-item active">
+                  <div class="product-container">
+                    <div class="product-cart">
+                      <div class="product-cart-image">
+                        <a href="Product_Details.html">
+                          <img src="Images/p360-1.jpg" alt="" />
+                          <img
+                            src="Images/p360-9-2.png"
+                            class="overlay-image"
+                            alt=""
+                          />
+                        </a>
+                        <!-- Start:overlay icon -->
+                        <div class="product-cart-overlay">
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-heart"></i>
+                            <span class="tolltip-text"
+                              >افزودن به علاقه مندی ها</span
+                            >
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-shopping-bag"></i>
+                            <span class="tolltip-text">افزودن به سبد خرید</span>
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-eye"></i>
+                            <span class="tolltip-text">جزئیات محصول</span>
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-balance-scale"></i>
+                            <span class="tolltip-text">مقایسه کردن</span>
+                          </button>
+                        </div>
+                      </div>
+                      <!-- start:product info -->
+                      <div class="product-cart-info">
+                        <a href="#">نام محصول</a>
+                        <div class="product-price">
+                          
+                          <span>30000</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="topslide-item">
+                  <div class="product-container">
+                    <div class="product-cart">
+                      <div class="product-cart-image">
+                        <a href="Product_Details.html">
+                          <img src="Images/p360-2.jpg" alt="" />
+                          <img
+                            src="Images/p360-9-2.png"
+                            class="overlay-image"
+                            alt=""
+                          />
+                        </a>
+                        <!-- Start:overlay icon -->
+                        <div class="product-cart-overlay">
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-heart"></i>
+                            <span class="tolltip-text"
+                              >افزودن به علاقه مندی ها</span
+                            >
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-shopping-bag"></i>
+                            <span class="tolltip-text">افزودن به سبد خرید</span>
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-eye"></i>
+                            <span class="tolltip-text">جزئیات محصول</span>
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-balance-scale"></i>
+                            <span class="tolltip-text">مقایسه کردن</span>
+                          </button>
+                        </div>
+                      </div>
+                      <!-- start:product info -->
+                      <div class="product-cart-info">
+                        <a href="#">نام محصول</a>
+                        <div class="product-price">
+                          <i></i>
+                          <span>30000T</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="topslide-item">
+                  <div class="product-container">
+                    <div class="product-cart">
+                      <div class="product-cart-image">
+                        <a href="Product_Details.html">
+                          <img src="Images/p360-3.jpg" alt="" />
+                          <img
+                            src="Images/p360-9-2.png"
+                            class="overlay-image"
+                            alt=""
+                          />
+                        </a>
+                        <!-- Start:overlay icon -->
+                        <div class="product-cart-overlay">
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-heart"></i>
+                            <span class="tolltip-text"
+                              >افزودن به علاقه مندی ها</span
+                            >
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-shopping-bag"></i>
+                            <span class="tolltip-text">افزودن به سبد خرید</span>
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-eye"></i>
+                            <span class="tolltip-text">جزئیات محصول</span>
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-balance-scale"></i>
+                            <span class="tolltip-text">مقایسه کردن</span>
+                          </button>
+                        </div>
+                      </div>
+                      <!-- start:product info -->
+                      <div class="product-cart-info">
+                        <a href="#">نام محصول</a>
+                        <div class="product-price">
+                          <i></i>
+                          <span>30000T</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="topslide-item">
+                  <div class="product-container">
+                    <div class="product-cart">
+                      <div class="product-cart-image">
+                        <a href="Product_Details.html">
+                          <img src="Images/p360-4.jpg" alt="" />
+                          <img
+                            src="Images/p360-9-2.png"
+                            class="overlay-image"
+                            alt=""
+                          />
+                        </a>
+                        <!-- Start:overlay icon -->
+                        <div class="product-cart-overlay">
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-heart"></i>
+                            <span class="tolltip-text"
+                              >افزودن به علاقه مندی ها</span
+                            >
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-shopping-bag"></i>
+                            <span class="tolltip-text">افزودن به سبد خرید</span>
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-eye"></i>
+                            <span class="tolltip-text">جزئیات محصول</span>
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-balance-scale"></i>
+                            <span class="tolltip-text">مقایسه کردن</span>
+                          </button>
+                        </div>
+                      </div>
+                      <!-- start:product info -->
+                      <div class="product-cart-info">
+                        <a href="#">نام محصول</a>
+                        <div class="product-price">
+                          <i></i>
+                          <span>30000T</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="topslide-item">
+                  <div class="product-container">
+                    <div class="product-cart">
+                      <div class="product-cart-image">
+                        <a href="Product_Details.html">
+                          <img src="Images/p360-5.jpg" alt="" />
+                          <img
+                            src="Images/p360-9-2.png"
+                            class="overlay-image"
+                            alt=""
+                          />
+                        </a>
+                        <!-- Start:overlay icon -->
+                        <div class="product-cart-overlay">
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-heart"></i>
+                            <span class="tolltip-text"
+                              >افزودن به علاقه مندی ها</span
+                            >
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-shopping-bag"></i>
+                            <span class="tolltip-text">افزودن به سبد خرید</span>
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-eye"></i>
+                            <span class="tolltip-text">جزئیات محصول</span>
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-balance-scale"></i>
+                            <span class="tolltip-text">مقایسه کردن</span>
+                          </button>
+                        </div>
+                      </div>
+                      <!-- start:product info -->
+                      <div class="product-cart-info">
+                        <a href="#">نام محصول</a>
+                        <div class="product-price">
+                          <i></i>
+                          <span>30000T</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="topslide-item">
+                  <div class="product-container">
+                    <div class="product-cart">
+                      <div class="product-cart-image">
+                        <a href="Product_Details.html">
+                          <img src="Images/p360-6.jpg" alt="" />
+                          <img
+                            src="Images/p360-9-2.png"
+                            class="overlay-image"
+                            alt=""
+                          />
+                        </a>
+                        <!-- Start:overlay icon -->
+                        <div class="product-cart-overlay">
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-heart"></i>
+                            <span class="tolltip-text"
+                              >افزودن به علاقه مندی ها</span
+                            >
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-shopping-bag"></i>
+                            <span class="tolltip-text">افزودن به سبد خرید</span>
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-eye"></i>
+                            <span class="tolltip-text">جزئیات محصول</span>
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-balance-scale"></i>
+                            <span class="tolltip-text">مقایسه کردن</span>
+                          </button>
+                        </div>
+                      </div>
+                      <!-- start:product info -->
+                      <div class="product-cart-info">
+                        <a href="#">نام محصول</a>
+                        <div class="product-price">
+                          <i></i>
+                          <span>30000T</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="topslide-item">
+                  <div class="product-container">
+                    <div class="product-cart">
+                      <div class="product-cart-image">
+                        <a href="Product_Details.html">
+                          <img src="Images/p360-7-1.jpg" alt="" />
+                          <img
+                            src="Images/p360-7-2.jpg"
+                            class="overlay-image"
+                            alt=""
+                          />
+                        </a>
+                        <!-- Start:overlay icon -->
+                        <div class="product-cart-overlay">
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-heart"></i>
+                            <span class="tolltip-text"
+                              >افزودن به علاقه مندی ها</span
+                            >
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-shopping-bag"></i>
+                            <span class="tolltip-text">افزودن به سبد خرید</span>
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-eye"></i>
+                            <span class="tolltip-text">جزئیات محصول</span>
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-balance-scale"></i>
+                            <span class="tolltip-text">مقایسه کردن</span>
+                          </button>
+                        </div>
+                      </div>
+                      <!-- start:product info -->
+                      <div class="product-cart-info">
+                        <a href="#">نام محصول</a>
+                        <div class="product-price">
+                          <i></i>
+                          <span>30000T</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="topslide-item">
+                  <div class="product-container">
+                    <div class="product-cart">
+                      <div class="product-cart-image">
+                        <a href="Product_Details.html">
+                          <img src="Images/p360-8-1.jpg" alt="" />
+                          <img
+                            src="Images/p360-8-2.jpg"
+                            class="overlay-image"
+                            alt=""
+                          />
+                        </a>
+                        <!-- Start:overlay icon -->
+                        <div class="product-cart-overlay">
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-heart"></i>
+                            <span class="tolltip-text"
+                              >افزودن به علاقه مندی ها</span
+                            >
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-shopping-bag"></i>
+                            <span class="tolltip-text">افزودن به سبد خرید</span>
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-eye"></i>
+                            <span class="tolltip-text">جزئیات محصول</span>
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-balance-scale"></i>
+                            <span class="tolltip-text">مقایسه کردن</span>
+                          </button>
+                        </div>
+                      </div>
+                      <!-- start:product info -->
+                      <div class="product-cart-info">
+                        <a href="#">نام محصول</a>
+                        <div class="product-price">
+                          <i></i>
+                          <span>30000T</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="topslide-item">
+                  <div class="product-container">
+                    <div class="product-cart">
+                      <div class="product-cart-image">
+                        <a href="Product_Details.html">
+                          <img src="Images/p360-9-1.png" alt="" />
+                          <img
+                            src="Images/p360-9-2.png"
+                            class="overlay-image"
+                            alt=""
+                          />
+                        </a>
+                        <!-- Start:overlay icon -->
+                        <div class="product-cart-overlay">
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-heart"></i>
+                            <span class="tolltip-text"
+                              >افزودن به علاقه مندی ها</span
+                            >
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-shopping-bag"></i>
+                            <span class="tolltip-text">افزودن به سبد خرید</span>
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-eye"></i>
+                            <span class="tolltip-text">جزئیات محصول</span>
+                          </button>
+                          <button class="tolltip">
+                            <i class="tolltip-icon fas fa-balance-scale"></i>
+                            <span class="tolltip-text">مقایسه کردن</span>
+                          </button>
+                        </div>
+                      </div>
+                      <!-- start:product info -->
+                      <div class="product-cart-info">
+                        <a href="#">نام محصول</a>
+                        <div class="product-price">
+                          <i></i>
+                          <span>30000T</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="click2">
+            <span class="fas fa-arrow-left"></span>
+          </div>
+          <div id="click">
+            <span class="fas fa-arrow-right"></span>
+          </div>
+        </div>
+      </section>
+      <!-- End -->
+
+      <!--  Start:Products Categories-->
+      <section class="categories py-5">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Products Categories Title-->
+            <div class="col-sm-4 col-10 mx-auto py-2">
+              <h2>دسته بندی محصولات</h2>
+            </div>
+            <!-- Categories Tab-->
+            <div class="col-sm-8 col-10 mx-auto py-2">
+              <ul
+                class="nav category-tabs nav-justified mb-3"
+                id="caregorytab0"
+                role="tablist"
+              >
+                <!-- Tab For Skin Category-->
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="skin-tab0"
+                    data-bs-toggle="tab"
+                    data-bs-target="#skin0"
+                    type="button"
+                    role="tab"
+                    aria-controls="skin"
+                    aria-selected="true"
+                  >
+                    پوست
+                  </button>
+                </li>
+                <!-- Tab For Body Category-->
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="body-tab0"
+                    data-bs-toggle="tab"
+                    data-bs-target="#body0"
+                    type="button"
+                    role="tab"
+                    aria-controls="body"
+                    aria-selected="false"
+                  >
+                    بدن
+                  </button>
+                </li>
+                <!-- Tab For Face Category-->
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="face-tab0"
+                    data-bs-toggle="tab"
+                    data-bs-target="#face0"
+                    type="button"
+                    role="tab"
+                    aria-controls="face"
+                    aria-selected="false"
+                  >
+                    صورت
+                  </button>
+                </li>
+                <!-- Tab For mens Category-->
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="mens-tab0"
+                    data-bs-toggle="tab"
+                    data-bs-target="#mens0"
+                    type="button"
+                    role="tab"
+                    aria-controls="mens"
+                    aria-selected="false"
+                  >
+                    مردانه
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Start:Category Contents-->
+          <div class="tab-content py-5" id="mycategorytab0">
+            <!-- Skin Category Content-->
+            <div
+              class="tab-pane fade show active"
+              id="skin0"
+              role="tabpanel"
+              aria-labelledby="skin-tab0"
+            >
+              <div class="row">
+                <!-- Category Image Content-->
+                <div class="col-lg-6 col-12">
+                  <div class="category-image">
+                    <div class="category-image-content">
+                      <img src="Images/p600-1.jpg" alt="" />
+                      <div class="category-image-text">
+                        <h4>
+                          <a href="#">محصولات مراقبت پوست</a>
+                        </h4>
+                        <a href="#"> 6 محصول</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Product List's-->
+                <div class="col-lg-6 col-12">
+                  <div class="row">
+                    <div class="col-sm-6 col-12 my-3">
+                      <div class="product-container">
+                        <div class="product-cart">
+                          <!--Image And content-->
+                          <div class="product-cart-image">
+                            <a href="#">
+                              <img src="Images/p360-9-1.png" alt="" />
+                              <!--Show Whene top image is hover-->
+                              <img
+                                src="Images/p360-9-2.png"
+                                class="overlay-image"
+                                alt=""
+                              />
+                            </a>
+                            <!-- Start:Tolltip & icon -->
+                            <div class="product-cart-overlay">
+                              <!--WishList Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-heart"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به علاقه مندی ها</span
+                                >
+                              </button>
+                              <!--Shoping Cart Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-shopping-bag"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به سبد خرید</span
+                                >
+                              </button>
+                              <!--Product Information Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-eye"></i>
+                                <span class="tolltip-text">جزئیات محصول</span>
+                              </button>
+                              <!--Compear Icon-->
+                              <button class="tolltip">
+                                <i
+                                  class="tolltip-icon fas fa-balance-scale"
+                                ></i>
+                                <span class="tolltip-text">مقایسه کردن</span>
+                              </button>
+                            </div>
+                          </div>
+                          <!-- start:product info -->
+                          <div class="product-cart-info">
+                            <a href="#">نام محصول</a>
+                            <div class="product-price">
+                              <i></i>
+                              <span>30000T</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-12 my-3">
+                      <div class="product-container">
+                        <div class="product-cart">
+                          <!--Image And content-->
+                          <div class="product-cart-image">
+                            <a href="#">
+                              <img src="Images/p360-9-1.png" alt="" />
+                              <!--Show Whene top image is hover-->
+                              <img
+                                src="Images/p360-9-2.png"
+                                class="overlay-image"
+                                alt=""
+                              />
+                            </a>
+                            <!-- Start:Tolltip & icon -->
+                            <div class="product-cart-overlay">
+                              <!--WishList Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-heart"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به علاقه مندی ها</span
+                                >
+                              </button>
+                              <!--Shoping Cart Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-shopping-bag"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به سبد خرید</span
+                                >
+                              </button>
+                              <!--Product Information Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-eye"></i>
+                                <span class="tolltip-text">جزئیات محصول</span>
+                              </button>
+                              <!--Compear Icon-->
+                              <button class="tolltip">
+                                <i
+                                  class="tolltip-icon fas fa-balance-scale"
+                                ></i>
+                                <span class="tolltip-text">مقایسه کردن</span>
+                              </button>
+                            </div>
+                          </div>
+                          <!-- start:product info -->
+                          <div class="product-cart-info">
+                            <a href="#">نام محصول</a>
+                            <div class="product-price">
+                              <i></i>
+                              <span>30000T</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-12 my-3">
+                      <div class="product-container">
+                        <div class="product-cart">
+                          <!--Image And content-->
+                          <div class="product-cart-image">
+                            <a href="#">
+                              <img src="Images/p360-9-1.png" alt="" />
+                              <!--Show Whene top image is hover-->
+                              <img
+                                src="Images/p360-9-2.png"
+                                class="overlay-image"
+                                alt=""
+                              />
+                            </a>
+                            <!-- Start:Tolltip & icon -->
+                            <div class="product-cart-overlay">
+                              <!--WishList Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-heart"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به علاقه مندی ها</span
+                                >
+                              </button>
+                              <!--Shoping Cart Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-shopping-bag"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به سبد خرید</span
+                                >
+                              </button>
+                              <!--Product Information Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-eye"></i>
+                                <span class="tolltip-text">جزئیات محصول</span>
+                              </button>
+                              <!--Compear Icon-->
+                              <button class="tolltip">
+                                <i
+                                  class="tolltip-icon fas fa-balance-scale"
+                                ></i>
+                                <span class="tolltip-text">مقایسه کردن</span>
+                              </button>
+                            </div>
+                          </div>
+                          <!-- start:product info -->
+                          <div class="product-cart-info">
+                            <a href="#">نام محصول</a>
+                            <div class="product-price">
+                              <i></i>
+                              <span>30000T</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-12 my-3">
+                      <div class="product-container">
+                        <div class="product-cart">
+                          <!--Image And content-->
+                          <div class="product-cart-image">
+                            <a href="#">
+                              <img src="Images/p360-9-1.png" alt="" />
+                              <!--Show Whene top image is hover-->
+                              <img
+                                src="Images/p360-9-2.png"
+                                class="overlay-image"
+                                alt=""
+                              />
+                            </a>
+                            <!-- Start:Tolltip & icon -->
+                            <div class="product-cart-overlay">
+                              <!--WishList Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-heart"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به علاقه مندی ها</span
+                                >
+                              </button>
+                              <!--Shoping Cart Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-shopping-bag"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به سبد خرید</span
+                                >
+                              </button>
+                              <!--Product Information Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-eye"></i>
+                                <span class="tolltip-text">جزئیات محصول</span>
+                              </button>
+                              <!--Compear Icon-->
+                              <button class="tolltip">
+                                <i
+                                  class="tolltip-icon fas fa-balance-scale"
+                                ></i>
+                                <span class="tolltip-text">مقایسه کردن</span>
+                              </button>
+                            </div>
+                          </div>
+                          <!-- start:product info -->
+                          <div class="product-cart-info">
+                            <a href="#">نام محصول</a>
+                            <div class="product-price">
+                              <i></i>
+                              <span>30000T</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Body Category Content-->
+            <div
+              class="tab-pane fade"
+              id="body0"
+              role="tabpanel"
+              aria-labelledby="body-tab0"
+            >
+              <div class="row">
+                <!-- Category Image Content-->
+                <div class="col-lg-6 col-12">
+                  <div class="category-image">
+                    <div class="category-image-content">
+                      <img src="Images/p600-5.jpg" alt="" />
+                      <div class="category-image-text">
+                        <h4>
+                          <a href="#">محصولات مراقبت پوست</a>
+                        </h4>
+                        <a href="#"> 6 محصول</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- List's Product-->
+                <div class="col-lg-6 col-12">
+                  <div class="row">
+                    <div class="col-sm-6 col-12 my-3">
+                      <div class="product-container">
+                        <div class="product-cart">
+                          <!--Image And content-->
+                          <div class="product-cart-image">
+                            <a href="#">
+                              <img src="Images/p360-9-1.png" alt="" />
+                              <!--Show Whene top image is hover-->
+                              <img
+                                src="Images/p360-9-2.png"
+                                class="overlay-image"
+                                alt=""
+                              />
+                            </a>
+                            <!-- Start:Tolltip & icon -->
+                            <div class="product-cart-overlay">
+                              <!--WishList Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-heart"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به علاقه مندی ها</span
+                                >
+                              </button>
+                              <!--Shoping Cart Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-shopping-bag"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به سبد خرید</span
+                                >
+                              </button>
+                              <!--Product Information Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-eye"></i>
+                                <span class="tolltip-text">جزئیات محصول</span>
+                              </button>
+                              <!--Compear Icon-->
+                              <button class="tolltip">
+                                <i
+                                  class="tolltip-icon fas fa-balance-scale"
+                                ></i>
+                                <span class="tolltip-text">مقایسه کردن</span>
+                              </button>
+                            </div>
+                          </div>
+                          <!-- start:product info -->
+                          <div class="product-cart-info">
+                            <a href="#">نام محصول</a>
+                            <div class="product-price">
+                              <i></i>
+                              <span>30000T</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-12 my-3">
+                      <div class="product-container">
+                        <div class="product-cart">
+                          <!--Image And content-->
+                          <div class="product-cart-image">
+                            <a href="#">
+                              <img src="Images/p360-9-1.png" alt="" />
+                              <!--Show Whene top image is hover-->
+                              <img
+                                src="Images/p360-9-2.png"
+                                class="overlay-image"
+                                alt=""
+                              />
+                            </a>
+                            <!-- Start:Tolltip & icon -->
+                            <div class="product-cart-overlay">
+                              <!--WishList Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-heart"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به علاقه مندی ها</span
+                                >
+                              </button>
+                              <!--Shoping Cart Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-shopping-bag"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به سبد خرید</span
+                                >
+                              </button>
+                              <!--Product Information Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-eye"></i>
+                                <span class="tolltip-text">جزئیات محصول</span>
+                              </button>
+                              <!--Compear Icon-->
+                              <button class="tolltip">
+                                <i
+                                  class="tolltip-icon fas fa-balance-scale"
+                                ></i>
+                                <span class="tolltip-text">مقایسه کردن</span>
+                              </button>
+                            </div>
+                          </div>
+                          <!-- start:product info -->
+                          <div class="product-cart-info">
+                            <a href="#">نام محصول</a>
+                            <div class="product-price">
+                              <i></i>
+                              <span>30000T</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-12 my-3">
+                      <div class="product-container">
+                        <div class="product-cart">
+                          <!--Image And content-->
+                          <div class="product-cart-image">
+                            <a href="#">
+                              <img src="Images/p360-9-1.png" alt="" />
+                              <!--Show Whene top image is hover-->
+                              <img
+                                src="Images/p360-9-2.png"
+                                class="overlay-image"
+                                alt=""
+                              />
+                            </a>
+                            <!-- Start:Tolltip & icon -->
+                            <div class="product-cart-overlay">
+                              <!--WishList Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-heart"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به علاقه مندی ها</span
+                                >
+                              </button>
+                              <!--Shoping Cart Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-shopping-bag"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به سبد خرید</span
+                                >
+                              </button>
+                              <!--Product Information Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-eye"></i>
+                                <span class="tolltip-text">جزئیات محصول</span>
+                              </button>
+                              <!--Compear Icon-->
+                              <button class="tolltip">
+                                <i
+                                  class="tolltip-icon fas fa-balance-scale"
+                                ></i>
+                                <span class="tolltip-text">مقایسه کردن</span>
+                              </button>
+                            </div>
+                          </div>
+                          <!-- start:product info -->
+                          <div class="product-cart-info">
+                            <a href="#">نام محصول</a>
+                            <div class="product-price">
+                              <i></i>
+                              <span>30000T</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-12 my-3">
+                      <div class="product-container">
+                        <div class="product-cart">
+                          <!--Image And content-->
+                          <div class="product-cart-image">
+                            <a href="#">
+                              <img src="Images/p360-9-1.png" alt="" />
+                              <!--Show Whene top image is hover-->
+                              <img
+                                src="Images/p360-9-2.png"
+                                class="overlay-image"
+                                alt=""
+                              />
+                            </a>
+                            <!-- Start:Tolltip & icon -->
+                            <div class="product-cart-overlay">
+                              <!--WishList Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-heart"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به علاقه مندی ها</span
+                                >
+                              </button>
+                              <!--Shoping Cart Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-shopping-bag"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به سبد خرید</span
+                                >
+                              </button>
+                              <!--Product Information Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-eye"></i>
+                                <span class="tolltip-text">جزئیات محصول</span>
+                              </button>
+                              <!--Compear Icon-->
+                              <button class="tolltip">
+                                <i
+                                  class="tolltip-icon fas fa-balance-scale"
+                                ></i>
+                                <span class="tolltip-text">مقایسه کردن</span>
+                              </button>
+                            </div>
+                          </div>
+                          <!-- start:product info -->
+                          <div class="product-cart-info">
+                            <a href="#">نام محصول</a>
+                            <div class="product-price">
+                              <i></i>
+                              <span>30000T</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Face Category Content-->
+            <div
+              class="tab-pane fade"
+              id="face0"
+              role="tabpanel"
+              aria-labelledby="face-tab0"
+            >
+              <div class="row">
+                <!-- Category Image Content-->
+                <div class="col-lg-6 col-12">
+                  <div class="category-image">
+                    <div class="category-image-content">
+                      <img src="Images/p600-3.jpg" alt="" />
+                      <div class="category-image-text">
+                        <h4>
+                          <a href="#">محصولات مراقبت پوست</a>
+                        </h4>
+                        <a href="#"> 6 محصول</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- List's Product-->
+                <div class="col-lg-6 col-12">
+                  <div class="row">
+                    <div class="col-sm-6 col-12 my-3">
+                      <div class="product-container">
+                        <div class="product-cart">
+                          <!--Image And content-->
+                          <div class="product-cart-image">
+                            <a href="#">
+                              <img src="Images/p360-9-1.png" alt="" />
+                              <!--Show Whene top image is hover-->
+                              <img
+                                src="Images/p360-9-2.png"
+                                class="overlay-image"
+                                alt=""
+                              />
+                            </a>
+                            <!-- Start:Tolltip & icon -->
+                            <div class="product-cart-overlay">
+                              <!--WishList Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-heart"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به علاقه مندی ها</span
+                                >
+                              </button>
+                              <!--Shoping Cart Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-shopping-bag"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به سبد خرید</span
+                                >
+                              </button>
+                              <!--Product Information Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-eye"></i>
+                                <span class="tolltip-text">جزئیات محصول</span>
+                              </button>
+                              <!--Compear Icon-->
+                              <button class="tolltip">
+                                <i
+                                  class="tolltip-icon fas fa-balance-scale"
+                                ></i>
+                                <span class="tolltip-text">مقایسه کردن</span>
+                              </button>
+                            </div>
+                          </div>
+                          <!-- start:product info -->
+                          <div class="product-cart-info">
+                            <a href="#">نام محصول</a>
+                            <div class="product-price">
+                              <i></i>
+                              <span>30000T</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-12 my-3">
+                      <div class="product-container">
+                        <div class="product-cart">
+                          <!--Image And content-->
+                          <div class="product-cart-image">
+                            <a href="#">
+                              <img src="Images/p360-9-1.png" alt="" />
+                              <!--Show Whene top image is hover-->
+                              <img
+                                src="Images/p360-9-2.png"
+                                class="overlay-image"
+                                alt=""
+                              />
+                            </a>
+                            <!-- Start:Tolltip & icon -->
+                            <div class="product-cart-overlay">
+                              <!--WishList Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-heart"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به علاقه مندی ها</span
+                                >
+                              </button>
+                              <!--Shoping Cart Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-shopping-bag"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به سبد خرید</span
+                                >
+                              </button>
+                              <!--Product Information Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-eye"></i>
+                                <span class="tolltip-text">جزئیات محصول</span>
+                              </button>
+                              <!--Compear Icon-->
+                              <button class="tolltip">
+                                <i
+                                  class="tolltip-icon fas fa-balance-scale"
+                                ></i>
+                                <span class="tolltip-text">مقایسه کردن</span>
+                              </button>
+                            </div>
+                          </div>
+                          <!-- start:product info -->
+                          <div class="product-cart-info">
+                            <a href="#">نام محصول</a>
+                            <div class="product-price">
+                              <i></i>
+                              <span>30000T</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-12 my-3">
+                      <div class="product-container">
+                        <div class="product-cart">
+                          <!--Image And content-->
+                          <div class="product-cart-image">
+                            <a href="#">
+                              <img src="Images/p360-9-1.png" alt="" />
+                              <!--Show Whene top image is hover-->
+                              <img
+                                src="Images/p360-9-2.png"
+                                class="overlay-image"
+                                alt=""
+                              />
+                            </a>
+                            <!-- Start:Tolltip & icon -->
+                            <div class="product-cart-overlay">
+                              <!--WishList Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-heart"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به علاقه مندی ها</span
+                                >
+                              </button>
+                              <!--Shoping Cart Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-shopping-bag"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به سبد خرید</span
+                                >
+                              </button>
+                              <!--Product Information Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-eye"></i>
+                                <span class="tolltip-text">جزئیات محصول</span>
+                              </button>
+                              <!--Compear Icon-->
+                              <button class="tolltip">
+                                <i
+                                  class="tolltip-icon fas fa-balance-scale"
+                                ></i>
+                                <span class="tolltip-text">مقایسه کردن</span>
+                              </button>
+                            </div>
+                          </div>
+                          <!-- start:product info -->
+                          <div class="product-cart-info">
+                            <a href="#">نام محصول</a>
+                            <div class="product-price">
+                              <i></i>
+                              <span>30000T</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-12 my-3">
+                      <div class="product-container">
+                        <div class="product-cart">
+                          <!--Image And content-->
+                          <div class="product-cart-image">
+                            <a href="#">
+                              <img src="Images/p360-9-1.png" alt="" />
+                              <!--Show Whene top image is hover-->
+                              <img
+                                src="Images/p360-9-2.png"
+                                class="overlay-image"
+                                alt=""
+                              />
+                            </a>
+                            <!-- Start:Tolltip & icon -->
+                            <div class="product-cart-overlay">
+                              <!--WishList Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-heart"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به علاقه مندی ها</span
+                                >
+                              </button>
+                              <!--Shoping Cart Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-shopping-bag"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به سبد خرید</span
+                                >
+                              </button>
+                              <!--Product Information Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-eye"></i>
+                                <span class="tolltip-text">جزئیات محصول</span>
+                              </button>
+                              <!--Compear Icon-->
+                              <button class="tolltip">
+                                <i
+                                  class="tolltip-icon fas fa-balance-scale"
+                                ></i>
+                                <span class="tolltip-text">مقایسه کردن</span>
+                              </button>
+                            </div>
+                          </div>
+                          <!-- start:product info -->
+                          <div class="product-cart-info">
+                            <a href="#">نام محصول</a>
+                            <div class="product-price">
+                              <i></i>
+                              <span>30000T</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- mens Category Content-->
+            <div
+              class="tab-pane fade"
+              id="mens0"
+              role="tabpanel"
+              aria-labelledby="mens-tab0"
+            >
+              <div class="row">
+                <!-- Category Image Content-->
+                <div class="col-lg-6 col-12">
+                  <div class="category-image">
+                    <div class="category-image-content">
+                      <img src="Images/p600-2.jpg" alt="" />
+                      <div class="category-image-text">
+                        <h4>
+                          <a href="#">محصولات مراقبت پوست</a>
+                        </h4>
+                        <a href="#"> 6 محصول</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- List's Product-->
+                <div class="col-lg-6 col-12">
+                  <div class="row">
+                    <div class="col-sm-6 col-12 my-3">
+                      <div class="product-container">
+                        <div class="product-cart">
+                          <!--Image And content-->
+                          <div class="product-cart-image">
+                            <a href="#">
+                              <img src="Images/p360-9-1.png" alt="" />
+                              <!--Show Whene top image is hover-->
+                              <img
+                                src="Images/p360-9-2.png"
+                                class="overlay-image"
+                                alt=""
+                              />
+                            </a>
+                            <!-- Start:Tolltip & icon -->
+                            <div class="product-cart-overlay">
+                              <!--WishList Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-heart"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به علاقه مندی ها</span
+                                >
+                              </button>
+                              <!--Shoping Cart Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-shopping-bag"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به سبد خرید</span
+                                >
+                              </button>
+                              <!--Product Information Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-eye"></i>
+                                <span class="tolltip-text">جزئیات محصول</span>
+                              </button>
+                              <!--Compear Icon-->
+                              <button class="tolltip">
+                                <i
+                                  class="tolltip-icon fas fa-balance-scale"
+                                ></i>
+                                <span class="tolltip-text">مقایسه کردن</span>
+                              </button>
+                            </div>
+                          </div>
+                          <!-- start:product info -->
+                          <div class="product-cart-info">
+                            <a href="#">نام محصول</a>
+                            <div class="product-price">
+                              <i></i>
+                              <span>30000T</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-12 my-3">
+                      <div class="product-container">
+                        <div class="product-cart">
+                          <!--Image And content-->
+                          <div class="product-cart-image">
+                            <a href="#">
+                              <img src="Images/p360-9-1.png" alt="" />
+                              <!--Show Whene top image is hover-->
+                              <img
+                                src="Images/p360-9-2.png"
+                                class="overlay-image"
+                                alt=""
+                              />
+                            </a>
+                            <!-- Start:Tolltip & icon -->
+                            <div class="product-cart-overlay">
+                              <!--WishList Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-heart"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به علاقه مندی ها</span
+                                >
+                              </button>
+                              <!--Shoping Cart Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-shopping-bag"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به سبد خرید</span
+                                >
+                              </button>
+                              <!--Product Information Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-eye"></i>
+                                <span class="tolltip-text">جزئیات محصول</span>
+                              </button>
+                              <!--Compear Icon-->
+                              <button class="tolltip">
+                                <i
+                                  class="tolltip-icon fas fa-balance-scale"
+                                ></i>
+                                <span class="tolltip-text">مقایسه کردن</span>
+                              </button>
+                            </div>
+                          </div>
+                          <!-- start:product info -->
+                          <div class="product-cart-info">
+                            <a href="#">نام محصول</a>
+                            <div class="product-price">
+                              <i></i>
+                              <span>30000T</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-12 my-3">
+                      <div class="product-container">
+                        <div class="product-cart">
+                          <!--Image And content-->
+                          <div class="product-cart-image">
+                            <a href="#">
+                              <img src="Images/p360-9-1.png" alt="" />
+                              <!--Show Whene top image is hover-->
+                              <img
+                                src="Images/p360-9-2.png"
+                                class="overlay-image"
+                                alt=""
+                              />
+                            </a>
+                            <!-- Start:Tolltip & icon -->
+                            <div class="product-cart-overlay">
+                              <!--WishList Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-heart"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به علاقه مندی ها</span
+                                >
+                              </button>
+                              <!--Shoping Cart Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-shopping-bag"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به سبد خرید</span
+                                >
+                              </button>
+                              <!--Product Information Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-eye"></i>
+                                <span class="tolltip-text">جزئیات محصول</span>
+                              </button>
+                              <!--Compear Icon-->
+                              <button class="tolltip">
+                                <i
+                                  class="tolltip-icon fas fa-balance-scale"
+                                ></i>
+                                <span class="tolltip-text">مقایسه کردن</span>
+                              </button>
+                            </div>
+                          </div>
+                          <!-- start:product info -->
+                          <div class="product-cart-info">
+                            <a href="#">نام محصول</a>
+                            <div class="product-price">
+                              <i></i>
+                              <span>30000T</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-12 my-3">
+                      <div class="product-container">
+                        <div class="product-cart">
+                          <!--Image And content-->
+                          <div class="product-cart-image">
+                            <a href="#">
+                              <img src="Images/p360-9-1.png" alt="" />
+                              <!--Show Whene top image is hover-->
+                              <img
+                                src="Images/p360-9-2.png"
+                                class="overlay-image"
+                                alt=""
+                              />
+                            </a>
+                            <!-- Start:Tolltip & icon -->
+                            <div class="product-cart-overlay">
+                              <!--WishList Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-heart"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به علاقه مندی ها</span
+                                >
+                              </button>
+                              <!--Shoping Cart Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-shopping-bag"></i>
+                                <span class="tolltip-text"
+                                  >افزودن به سبد خرید</span
+                                >
+                              </button>
+                              <!--Product Information Icon-->
+                              <button class="tolltip">
+                                <i class="tolltip-icon fas fa-eye"></i>
+                                <span class="tolltip-text">جزئیات محصول</span>
+                              </button>
+                              <!--Compear Icon-->
+                              <button class="tolltip">
+                                <i
+                                  class="tolltip-icon fas fa-balance-scale"
+                                ></i>
+                                <span class="tolltip-text">مقایسه کردن</span>
+                              </button>
+                            </div>
+                          </div>
+                          <!-- start:product info -->
+                          <div class="product-cart-info">
+                            <a href="#">نام محصول</a>
+                            <div class="product-price">
+                              <i></i>
+                              <span>30000T</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  End -->
+
+      <!-- Start:Hair care Products-->
+      <section class="hair-care py-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="slide">
+              <div class="slide-items">
+                <!-- Item 1-->
+                <div class="item active">
+                  <div class="row">
+                    <!-- Title & Rate & Discreption -->
+                    <div class="col-md-6 col-12">
+                      <div class="texts">
+                        <!-- Product Title is here-->
+                        <div class="hair-care-title">
+                          <h4>
+                            <a href="#">بهترین های کراتین مو</a>
+                          </h4>
+                        </div>
+                        <!--Rate And Discreption-->
+                        <div class="hair-care-descreption">
+                          <ul>
+                            <li class="onrated fas fa-star"></li>
+                            <li class="rated fas fa-star"></li>
+                            <li class="rated fas fa-star"></li>
+                            <li class="rated fas fa-star"></li>
+                            <li class="rated fas fa-star"></li>
+                          </ul>
+                          <h3>
+                            متن ساختگی برای طراحی سایت
+                            <br />
+                            با قابلیت انتخاب تعداد کلمه
+                          </h3>
+                        </div>
+                        <!-- product Brand Name-->
+                        <div class="product-brand">
+                          <a href="#">--نام برند</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Product Image-->
+                    <div class="col-md-6 col-12 d-flex justify-content-end">
+                      <div class="hair-care-image">
+                        <a href="#"><img src="Images/h720x-2.jpg" alt="" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                    <!-- Title & Rate & Discreption -->
+                    <div class="col-md-6 col-12">
+                      <div class="texts">
+                        <!-- Product Title is here-->
+                        <div class="hair-care-title">
+                          <h4>
+                            <a href="#">بهترین های ویتامینه مو</a>
+                          </h4>
+                        </div>
+                        <!--Rate And Discreption-->
+                        <div class="hair-care-descreption">
+                          <ul>
+                            <li class="onrated fas fa-star"></li>
+                            <li class="onrated fas fa-star"></li>
+                            <li class="rated fas fa-star"></li>
+                            <li class="rated fas fa-star"></li>
+                            <li class="rated fas fa-star"></li>
+                          </ul>
+                          <h3>
+                            متن ساختگی برای طراحی سایت
+                            <br />
+                            با قابلیت انتخاب تعداد کلمه
+                          </h3>
+                        </div>
+                        <!-- product Brand Name-->
+                        <div class="product-brand">
+                          <a href="#">--نام برند</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Product Image-->
+                    <div class="col-md-6 col-12 d-flex justify-content-end">
+                      <div class="hair-care-image">
+                        <a href="#"><img src="Images/h720x-1.jpg" alt="" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                    <!-- Title & Rate & Discreption -->
+                    <div class="col-md-6 col-12">
+                      <div class="texts">
+                        <!-- Product Title is here-->
+                        <div class="hair-care-title">
+                          <h4>
+                            <a href="#">بهترین های مراقبت مو</a>
+                          </h4>
+                        </div>
+                        <!--Rate And Discreption-->
+                        <div class="hair-care-descreption">
+                          <ul>
+                            <li class="rated fas fa-star"></li>
+                            <li class="rated fas fa-star"></li>
+                            <li class="rated fas fa-star"></li>
+                            <li class="rated fas fa-star"></li>
+                            <li class="rated fas fa-star"></li>
+                          </ul>
+                          <h3>
+                            متن ساختگی برای طراحی سایت
+                            <br />
+                            با قابلیت انتخاب تعداد کلمه
+                          </h3>
+                        </div>
+                        <!-- product Brand Name-->
+                        <div class="product-brand">
+                          <a href="#">--نام برند</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Product Image-->
+                    <div class="col-md-6 col-12 d-flex justify-content-end">
+                      <div class="hair-care-image">
+                        <a href="#"><img src="Images/h720x-3.jpg" alt="" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="right-slide">&#10094;</div>
+                <div class="left-slide">&#10095;</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End -->
+
+      <!-- start:Baner Liguid -->
+      <section class="baner-liquid py-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-sm-10 col-12 mx-auto">
+              <div class="content-baner">
+                <figure class="figure overflow-hidden">
+                  <!--  Baner Image  -->
+                  <img src="Images/bn7_1920x.jpg" alt="" />
+                  <figcaption class="figure-caption">
+                    <div>
+                      <div class="liguid-bg">
+                        <div></div>
+                      </div>
+                      <div class="liguid-title">
+                        <h2>
+                          <a href="#">خرید ویژه</a>
+                        </h2>
+                      </div>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-10 col-12 mx-auto">
+              <div class="content-baner">
+                <figure class="figure overflow-hidden">
+                  <!--  Baner Image  -->
+                  <img src="Images/bn8_1920x.jpg" alt="" />
+                  <figcaption class="figure-caption">
+                    <div class="">
+                      <div class="liguid-bg"></div>
+                      <div class="liguid-title">
+                        <h2>
+                          <a href="#">فروش زمستانه</a>
+                        </h2>
+                      </div>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End -->
+
+      <!-- start: INSTAGRAM Link-->
+      <section class="insta-link py-5">
+        <div class="container">
+          <div class="row">
+            <div class="insta-icon">
+              <img src="Images/insta.png" alt="" />
+            </div>
+            <div class="insta-link-title p-3">
+              <h2 class="fw-bold text-uppercase">
+                <a href="#">AluuraShop</a>
+              </h2>
+            </div>
+            <div class="insta-text">
+              <p>instagram</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End-->
+
+      <!-- Start: News-->
+      <section class="news py-5">
+        <div class="container-fluid">
+          <div class="row boxes">
+            <div class="col-lg-4 col-md-7 col-sm-10 col-12">
+              <div class="">
+                <div class="box-body">
+                  <img src="Images/news1_540x.jpg" alt="" />
+                </div>
+                <div class="box-footer">
+                  <div class="news-date">
+                    <span>19 آبان 1400</span>
+                  </div>
+                  <div class="news-title">
+                    <h3>
+                      <a href="#">فواید حمام برای پوست</a>
+                    </h3>
+                  </div>
+                  <div class="news-text">
+                    <p>حمام می تواند سلامت پوست را بهبود بخشد. در ابتدا...</p>
+                  </div>
+                  <div class="read-more">
+                    <button>
+                      <a href="">خواندن مقاله</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-7 col-sm-10 col-12">
+              <div class="">
+                <div class="box-body">
+                  <img src="Images/news2_540x.jpg" alt="" />
+                </div>
+                <div class="box-footer">
+                  <div class="news-date">
+                    <span>30 آبان 1400</span>
+                  </div>
+                  <div class="news-title">
+                    <h3>
+                      <a href="#">3 روش مراقبت های پوستی برای محافظت پوست</a>
+                    </h3>
+                  </div>
+                  <div class="news-text">
+                    <p>مراقبت از پوست امر بسیار مهمی است پس بهتر است…</p>
+                  </div>
+                  <div class="read-more">
+                    <button>
+                      <a href="">خواندن مقاله</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-7 col-sm-10 col-12">
+              <div class="">
+                <div class="box-body">
+                  <img src="Images/news3_540x.jpg" alt="" />
+                </div>
+                <div class="box-footer">
+                  <div class="news-date">
+                    <span>10 آذر 1400</span>
+                  </div>
+                  <div class="news-title">
+                    <h3>
+                      <a href="#">۱۱عادت غلط که موهای شما را نازک‌تر می‌کند</a>
+                    </h3>
+                  </div>
+                  <div class="news-text">
+                    <p>حتی اگر در کمال ناباوری وسط سرتان در حال خالی…</p>
+                  </div>
+                  <div class="read-more">
+                    <button>
+                      <a href="">خواندن مقاله</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End-->
+    </main>
+
+    <footer>
+      <section class="services py-2">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-4 col-6 ">
+              <figure class="figure">
+                <img
+                  src="Images/free-shipping.png"
+                  class="img-fluid"
+                  alt="free-shipping"
+                />
+                <figcaption class="figure-caption">
+                  <h4>ارسال رایگان</h4>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-sm-4 col-6 ">
+              <figure class="figure">
+                <img src="Images/orginal.png" class="img-fluid" alt="orginal" />
+                <figcaption class="figure-caption">
+                  <h4>ضمانت اصیل بودن کالا</h4>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-sm-4 col-6 mx-auto">
+              <figure class="figure">
+                <img src="Images/return.png" class="img-fluid" alt="return" />
+                <figcaption class="figure-caption">
+                  <h4>بازگشت 3روزه کالا</h4>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mega-footer">
+        <div class="container-fluid">
+          <div class="row mega-footer-top">
+            <div class="footer-logo">
+              <a href="#"><img src="/Images/aloora (1)-01.png" alt="" /></a>
+            </div>
+            <div class="footer-menu row">
+              <div class="columns col-lg-3 col-sm-8 col-10 mx-auto">
+                <div class="footer-title">
+                  <h3>اطلاعات تماس</h3>
+                </div>
+                <div class="footer-links">
+                  <p>اردبیل خیابان وحدت پلاک 12</p>
+                  <p>شماره تماس:045-33478523</p>
+                  <p>ایمیل:info@aluurashop.com</p>
+                </div>
+              </div>
+
+              <div class="columns col-lg-2 col-sm-4 col-10 mx-auto">
+                <div class="footer-title">
+                  <h3>فروشگاه آلورا</h3>
+                </div>
+                <div class="footer-links">
+                  <a href="#">تماس با</a>
+                  <a href="#">درباره ما</a>
+                  <a href="#">مجله ها</a>
+                </div>
+              </div>
+
+              <div class="columns col-lg-3 col-sm-5 col-10 mx-auto">
+                <div class="footer-title">
+                  <h3>خدمات مشتریان</h3>
+                </div>
+                <div class="footer-links">
+                  <a href="#">قوانین استفاده از سایت</a>
+                  <a href="#">نحوه پیگیری سفارش </a>
+                  <a href="#">شرایط بازگشت کالا</a>
+                  <a href="#">روش های پرداخت</a>
+                </div>
+              </div>
+
+              <div class="columns col-lg-4 col-sm-7 col-10 mx-auto">
+                <div>
+                  <div class="footer-title">
+                    <h3>
+                      با عضویت در خبرنامه آلورا از آخرین تخفیفات با خبر شوید
+                    </h3>
+                  </div>
+                  <div class="footer-login">
+                    <form action="">
+                      <div class="input-group">
+                        <button type="button">ثبت نام</button>
+                        <input
+                          type="text"
+                          placeholder="ایمیل خود را وارد کنید"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="social-icon">
+                  <a
+                    href="#"
+                    class="icon"
+                    title="social-media-instagram"
+                    target="_blank"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="icon"
+                    title="social-media-telegram"
+                    target="_blank"
+                  >
+                    <i class="fab fa-telegram-plane"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="icon"
+                    title="social-media-whatsapp"
+                    target="_blank"
+                  >
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="foorer-bottem">
+            <div class="text-center">
+              <p class="text-light">
+                کیه حقوق مادی و معنی این سایت متعلق به فروشگاه آلورا میباشد
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+  <script type="text/javascript" src="Js/bootstrap.js"></script>
+  <script type="text/javascript" src="Js/script.js"></script>
+</html>

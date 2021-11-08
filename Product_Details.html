@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./css/reset.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/ionicon.min.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <!-- BootStrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!--My Personol Styles-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Start:Social icon & Search box & Account-->
+    <!--  This Section will be hidden in  850px-->
+    <nav
+      class="header-top navbar navbar-expand navbar-light d-block none-navbar"
+    >
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="#" title="آلورا در اینستاگرام"
+            ><i class="icon fab fa-instagram"></i
+          ></a>
+          <a href="#" title="آلورا در واتس آپ"
+            ><i class="icon fab fa-whatsapp"></i
+          ></a>
+          <a href="#" title="آلورا در تلگرام"
+            ><i class="icon fab fa-telegram-plane"></i
+          ></a>
+          <button
+            type="button"
+            class="icon"
+            title="جستجوی محصول"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvas-forSearch"
+            aria-controls="offcanvas-forSearch"
+          >
+            <i class="fas fa-search"></i>
+          </button>
+          <div
+            class="offcanvas offcanvas-top"
+            tabindex="-1"
+            id="offcanvas-forSearch"
+            aria-labelledby="offcanvasTopLabel"
+          >
+            <div class="offcanvas-header">
+              <h6 id="offcanvasTopLabel">
+                نام محصول , دسته یا برند مورد نظر را وارد کنید
+              </h6>
+              <button
+                type="button"
+                class="btn-close text-reset mx-1"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body search-body">
+              <form action="#" method="POST">
+                <div class="input-group">
+                  <button type="submit">
+                    <i class="ion-md-search"></i>
+                  </button>
+                  <input type="text" id="search" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-nav">
+          <a class="icon nav-item nav-link" href="UserPanel.html"
+            >حساب کاربری من <i class="fas fa-user"></i
+          ></a>
+          <a class="icon nav-item nav-link" href="Login.html"
+            >ورود <i class="fas fa-lock"></i
+          ></a>
+          <a class="icon nav-item nav-link" href="Register.html"
+            >ثبت نام <i class="fas fa-lock"></i
+          ></a>
+          <a class="icon nav-item nav-link" title="سبد خرید" href="#"
+            >سبد خرید <i class="fas fa-shopping-cart"></i
+          ></a>
+        </div>
+      </div>
+    </nav>
+    <header class="header sticky-top mb-4">
+      <div class="container">
+        <div class="wrapper">
+          <div class="header-item-right">
+            <button type="button" class="menu-mobile-trigger">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+
+          <!-- Section: Navbar Menu -->
+          <div class="header-item-center">
+            <div class="overlay"></div>
+            <nav class="menu">
+              <div class="menu-mobile-header">
+                <button type="button" class="menu-mobile-arrow">
+                  <i class="ion ion-ios-arrow-back"></i>
+                </button>
+                <div class="menu-mobile-title"></div>
+                <button type="button" class="menu-mobile-close">
+                  <i class="ion ion-ios-close"></i>
+                </button>
+              </div>
+              <ul class="menu-section">
+                <!---------------  Social icons  ----------------->
+                <li class="lg-item-none d-none">
+                  <nav class="navbar navbar-expand">
+                    <div class="container">
+                      <div class="navbar-nav">
+                        <a class="icon nav-item nav-link" href="#"
+                          ><i class="fab fa-instagram"></i
+                        ></a>
+                        <a class="icon nav-item nav-link" href="#"
+                          ><i class="fab fa-whatsapp"></i
+                        ></a>
+                        <a class="icon nav-item nav-link" href="#"
+                          ><i class="fab fa-telegram-plane"></i
+                        ></a>
+                        <a class="icon nav-item nav-link" href="#"
+                          ><i class="fas fa-shopping-cart"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </nav>
+                </li>
+                <!---------------  Search  ----------------->
+                <li class="lg-item-none d-none">
+                  <div class="">
+                    <form action="#" method="POST">
+                      <div class="search-body">
+                        <input
+                          type="text"
+                          class=""
+                          placeholder="نام محصول یا دسته بندی را وارد کنید"
+                        />
+                        <button type="submit">
+                          <i class="icon ion-md-search"></i>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </li>
+                <li><a href="index.html">خانه</a></li>
+                <!---------------  makeup products  ----------------->
+                <li class="menu-item-has-children">
+                  <a href="#">آرایشی<i class="ion ion-ios-arrow-down"></i></a>
+                  <div class="menu-subs menu-mega menu-column-4">
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">آرایش و گریم</h4></a>
+                      <ul class="menu-section">
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">محصولات پوستی</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">محصولات مو</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">مردانه</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">محصولات برقی</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <!-- <img src="./asset/image-5.jpg" class="responsive" alt="Shop Product"> -->
+                      <a href="#"><h4 class="title">عطر</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">متفرقه</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!----------------  Skin products  -------------------->
+                <li class="menu-item-has-children">
+                  <a href="#">پوست<i class="ion ion-ios-arrow-down"></i></a>
+                  <div class="menu-subs menu-mega menu-column-4">
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">آرایش و گریم</h4></a>
+                      <ul class="menu-section">
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">محصولات پوستی</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">محصولات مو</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">مردانه</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">محصولات برقی</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <!-- <img src="./asset/image-5.jpg" class="responsive" alt="Shop Product"> -->
+                      <a href="#"><h4 class="title">عطر</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">متفرقه</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!----------------  Hair products  -------------------->
+                <li class="menu-item-has-children">
+                  <a href="#">مو<i class="ion ion-ios-arrow-down"></i></a>
+                  <div class="menu-subs menu-mega menu-column-4">
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">آرایش و گریم</h4></a>
+                      <ul class="menu-section">
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">محصولات پوستی</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">محصولات مو</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">مردانه</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">محصولات برقی</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <!-- <img src="./asset/image-5.jpg" class="responsive" alt="Shop Product"> -->
+                      <a href="#"><h4 class="title">عطر</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">متفرقه</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!----------------  Electrical products  -------------------->
+                <li class="menu-item-has-children">
+                  <a href="#"
+                    >لوازم برقی<i class="ion ion-ios-arrow-down"></i
+                  ></a>
+                  <div class="menu-subs menu-mega menu-column-4">
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">آرایش و گریم</h4></a>
+                      <ul class="menu-section">
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">محصولات پوستی</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">محصولات مو</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">مردانه</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">محصولات برقی</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <!-- <img src="./asset/image-5.jpg" class="responsive" alt="Shop Product"> -->
+                      <a href="#"><h4 class="title">عطر</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">متفرقه</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!----------------  Men's products  --------------------->
+                <li class="menu-item-has-children">
+                  <a href="#">مردانه<i class="ion ion-ios-arrow-down"></i></a>
+                  <div class="menu-subs menu-mega menu-column-4">
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">آرایش و گریم</h4></a>
+                      <ul class="menu-section">
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">محصولات پوستی</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">محصولات مو</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">مردانه</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <a href="#"><h4 class="title">محصولات برقی</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <!-- <img src="./asset/image-5.jpg" class="responsive" alt="Shop Product"> -->
+                      <a href="#"><h4 class="title">عطر</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                      <a href="#"><h4 class="title">متفرقه</h4></a>
+                      <ul>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                        <li><a href="#">لوریم ایپسوم</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!----------------  Other  -------------------------->
+                <li class="menu-item-has-children">
+                  <a href="">متفرقه<i class="ion ion-ios-arrow-down"></i></a>
+                  <div class="menu-subs menu-column-1">
+                    <ul>
+                      <li><a href="About_us.html">درباره ما</a></li>
+                      <li><a href="Contact_Us.html">تماس با ما</a></li>
+                      <li><a href="LookBook.html">مجله سلامت و زیبای</a></li>
+                      <li><a href="#">نقو برسی محصولات</a></li>
+                      <!-- <li><a href="#">لورم ایپسوم</a></li>
+											<li><a href="#">لورم ایپسوم</a></li> -->
+                    </ul>
+                  </div>
+                </li>
+                <!------------------  Account  -------------------------->
+                <li class="menu-item-has-children lg-item-none d-none">
+                  <a href="#"
+                    >حساب کاربری<i class="ion ion-ios-arrow-down"></i
+                  ></a>
+                  <div class="menu-subs menu-column-1">
+                    <ul>
+                      <li>
+                        <a href="Login.html"
+                          >ورود
+                          <i class="ion-ios-lock"></i>
+                        </a>
+                        <a href="Register.html"
+                          >ثبت نام <i class="ion-ios-lock"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="UserPanel.html"
+                          >حساب کاربری من <i class="ion-ios-person"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >پیگیری سفارش <i class="ion-ios-card"></i
+                        ></a>
+                      </li>
+                      <!-- <li><a href="#">لورم ایپسوم</a></li> -->
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-----------------  LOGO Icon ----------------->
+          <div class="header-item-left">
+            <h1>
+              <a href="./index.html" class="brand">
+                <img src="Images/A3.jpg" alt="logo" />
+              </a>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="breadcrumb">
+        <div>
+          <a href="index.html" title="Home">خانه</a>
+          <span aria-hidden="true">/</span>
+          <span>جزئیات محصول</span>
+        </div>
+      </section>
+    </main>
+
+    <section class="product-details py-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <div id="galeryslide" class="product-photos carousel slide">
+              <div class="product-photos-main">
+                <div class="my-ghalery carousel-inner">
+                  <div class="ghalery-item carousel-item active">
+                    <img
+                      src="/Images/pd1_1200x.jpg"
+                      class="img-fluid"
+                      alt="تصویر محصول"
+                    />
+                  </div>
+                  <div class="ghalery-item carousel-item">
+                    <img
+                      src="/Images/pd2_1200x.jpg"
+                      class="img-fluid"
+                      alt="تصویر محصول"
+                    />
+                  </div>
+                  <div class="ghalery-item carousel-item">
+                    <img
+                      src="/Images/pd3_1200x.jpg"
+                      class="img-fluid"
+                      alt="تصویر محصول"
+                    />
+                  </div>
+                  <div class="ghalery-item carousel-item">
+                    <img
+                      src="/Images/pd4_1200x.jpg"
+                      class="img-fluid"
+                      alt="تصویر محصول"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="product-photos-thumbs">
+                <div class="product-single-thumbs carousel-indicators">
+                  <div
+                    class="product-single-thumbs-item active"
+                    data-bs-target="#galeryslide"
+                    data-bs-slide-to="0"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  >
+                    <figure>
+                      <img
+                        src="/Images/pd1_1200x.jpg"
+                        class="img-fluid"
+                        alt="تصویر محصول"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="product-single-thumbs-item"
+                    data-bs-target="#galeryslide"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  >
+                    <figure>
+                      <img
+                        src="/Images/pd2_1200x.jpg"
+                        class="img-fluid"
+                        alt="تصویر محصول"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="product-single-thumbs-item"
+                    data-bs-target="#galeryslide"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  >
+                    <figure>
+                      <img
+                        src="/Images/pd3_1200x.jpg"
+                        class="img-fluid"
+                        alt="تصویر محصول"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="product-single-thumbs-item"
+                    data-bs-target="#galeryslide"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  >
+                    <figure>
+                      <img
+                        src="/Images/pd4_1200x.jpg"
+                        class="img-fluid"
+                        alt="تصویر محصول"
+                      />
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="product-informaition">
+              <div class="product-informaition-top">
+                <div class="name">
+                  <h2>کرم پودر کانسیلر</h2>
+                </div>
+                <div class="price-discount">
+                  <h3 class="after-discount">30.000T</h3>
+                  <p class="price">60.000T</p>
+                  <p class="discount">
+                    <small>50%</small>
+                    <small>OFF</small>
+                  </p>
+                </div>
+                <div class="product-form">
+                  <div class="product-form-item">
+                    <a href="#">افزودن به سبد خرید</a>
+                  </div>
+                  <div class="product-form-item">
+                    <a href="#">خرید کردن</a>
+                  </div>
+                  <div class="product-form-quantity">
+                    <form action="">
+                      <input type="number" placeholder="0" />
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="product-informaition-bottom">
+                <div class="share-icons">
+                  <span>اشتراک گذاری:</span>
+                  <a href="#" title="اشتراک گذاری در اینستاگرام">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#" title="اشتراک گذاری در تلگرام">
+                    <i class="fab fa-telegram-plane"></i>
+                  </a>
+                  <a href="#" title="اشتراک گذاری در واتس آپ">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+                <p class="category">
+                  <span>دسته بندی:</span>
+                  <span>آرایش و گریم</span>
+                </p>
+                <p class="status">
+                  <span>وضعیت:</span>
+                  <span>موجود در انبار</span>
+                </p>
+                <p class="brand-name">
+                  <span>نام برند:</span>
+                  <span>کانسیلر</span>
+                </p>
+                <p class="color">
+                  <span>رنگ:</span>
+                  <span>قهوه ای و کرمی</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tabs py-5">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Tabs-->
+          <div class="col-10 mx-auto py-2">
+            <ul
+              class="nav nav-tabs nav-pills nav-fill mb-3"
+              id="navtabs0"
+              role="tablist"
+            >
+              <!-- Tab For Discreption-->
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="discreption-tab0"
+                  data-bs-toggle="tab"
+                  data-bs-target="#discreption0"
+                  type="button"
+                  role="tab"
+                  aria-controls="discreption"
+                  aria-selected="true"
+                >
+                  توضیحات
+                </button>
+              </li>
+              <!-- Tab For Review-->
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="review-tab0"
+                  data-bs-toggle="tab"
+                  data-bs-target="#review0"
+                  type="button"
+                  role="tab"
+                  aria-controls="review"
+                  aria-selected="false"
+                >
+                  نظرات کاربران
+                </button>
+              </li>
+              <!-- Tab For Others-->
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="others-tab0"
+                  data-bs-toggle="tab"
+                  data-bs-target="#others0"
+                  type="button"
+                  role="tab"
+                  aria-controls="others"
+                  aria-selected="false"
+                >
+                  موارد بیشتر
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Start:Contents-->
+        <div class="tab-content py-5">
+          <!-- Discreption Content-->
+          <div
+            class="tab-pane fade show active"
+            id="discreption0"
+            role="tabpanel"
+            aria-labelledby="discreption-tab0"
+          >
+            <div class="row">
+              <p>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است. چاپگرها و
+              </p>
+            </div>
+          </div>
+          <!-- Review Content-->
+          <div
+            class="tab-pane fade"
+            id="review0"
+            role="tabpanel"
+            aria-labelledby="review-tab0"
+          >
+            <div>
+              <!-- Title For Content-->
+              <div class="content-title d-inline-block">
+                <h4>نظرات کاربران</h4>
+              </div>
+              <!-- Write A Review Section -->
+              <div class="text-start">
+                <div class="write-review">
+                  <p>
+                    <button 
+                      class="write-review-btn"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#write-review-collapse"
+                      aria-expanded="false"
+                      aria-controls="write-review-collapse"
+                    >
+                      یک نظر بنویسید
+                    </button>
+                  </p>
+                  <div class="write-review-content">
+                    <div
+                      class="collapse collapse-horizontal"
+                      id="write-review-collapse"
+                    >
+                      <div class="write-review-content-form">
+                        <form action="#">
+                          <!-- Name Input -->
+                          <div class="form-floating my-3">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="floationg-input"
+                              placeholder="نام و نام خانوادگی"
+                            />
+                            <label for="floationg-input"
+                              >نام و نام خانوادگی</label
+                            >
+                          </div>
+                          <!-- Email Input -->
+                          <div class="form-floating my-3">
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="floationg-email"
+                              placeholder="ایمیل"
+                            />
+                            <label for="floationg-email">ایمیل</label>
+                          </div>
+                          <!-- Title Input -->
+                          <div class="form-floating my-3">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="floationg-title"
+                              placeholder="عنوان"
+                            />
+                            <label for="floationg-title">عنوان برای نظر</label>
+                          </div>
+                          <!-- Textarea -->
+                          <div class="form-floating my-3">
+                            <textarea
+                              class="form-control"
+                              id="floationg-textarea"
+                              placeholder="نظر و پیشنهاد"
+                            ></textarea>
+                            <label for="floationg-textarea"
+                              >نظر و پیشنهاد</label
+                            >
+                          </div>
+                          <!-- Submit Button -->
+                          <div class="my-5">
+                            <button class="write-review-btn">ثبت نظر</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Others Content-->
+          <div
+            class="tab-pane fade"
+            id="others0"
+            role="tabpanel"
+            aria-labelledby="others-tab0"
+          >
+            <div class="row"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-file py-5">
+      <!-- Video Player Section -->
+      <div class="video-container">
+        <video class="video-item" autoplay loop muted>
+          <source src="Images/demo-file.mp4" />
+        </video>
+      </div>
+      <!-- This Is Mask Overlay Video-->
+      <div class="video-mask"></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col demo-file-text">
+            <h3>آرایش صورت</h3>
+            <p class="text-uppercase">Kiko Colection</p>
+            <a href="#"> مشاهده محصول </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="productrelated py-5">
+      <div>
+        <h3 class="productrelated-title">محصولات مشابه</h3>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="productrelated-list">
+            <div class="productrelated-content">
+              <div class="productrelated-card">
+                <div class="productrelated-card-image">
+                  <a href="#" title="کرم زیر سازی">
+                    <img src="Images/p360-1.jpg" class="firs-imag" alt="">
+                    <img src="Images/p360-2.jpg" class="second-image" alt="">
+                  </a>
+                </div>
+                <div class="productrelated-overlay">
+                  <div class="vertical">
+                    <div class="tolltip">
+                      <div class="tolltip-icon">
+                        
+                      </div>
+                      <div class="tolltip-text"></div>
+                    </div>
+                  </div>
+                  <div class="horizontal"></div>
+                </div>
+                <div class="productrelated-card-info">
+                  <a href="#">
+                    <h3 class="productname">کرم زیر سازی </h3>
+                  </a>
+                  <div class="productprice">
+                    <span class="visually-hidden">قیمت واقعی</span>
+                    <span class="money"><i class="fas fa-rupee-sign"></i> 400.000  </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section class="services py-2">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-4 col-6">
+              <figure class="figure">
+                <img
+                  src="Images/free-shipping.png"
+                  class="img-fluid"
+                  alt="free-shipping"
+                />
+                <figcaption class="figure-caption">
+                  <h4>ارسال رایگان</h4>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-sm-4 col-6">
+              <figure class="figure">
+                <img src="Images/orginal.png" class="img-fluid" alt="orginal" />
+                <figcaption class="figure-caption">
+                  <h4>ضمانت اصیل بودن کالا</h4>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-sm-4 col-6 mx-auto">
+              <figure class="figure">
+                <img src="Images/return.png" class="img-fluid" alt="return" />
+                <figcaption class="figure-caption">
+                  <h4>بازگشت 3روزه کالا</h4>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mega-footer">
+        <div class="container-fluid">
+          <div class="row mega-footer-top">
+            <div class="footer-logo">
+              <a href="#"><img src="/Images/aloora (1)-01.png" alt="" /></a>
+            </div>
+            <div class="footer-menu row">
+              <div class="columns col-lg-3 col-sm-8 col-10 mx-auto">
+                <div class="footer-title">
+                  <h3>اطلاعات تماس</h3>
+                </div>
+                <div class="footer-links">
+                  <p>اردبیل خیابان وحدت پلاک 12</p>
+                  <p>شماره تماس:045-33478523</p>
+                  <p>ایمیل:info@aluurashop.com</p>
+                </div>
+              </div>
+
+              <div class="columns col-lg-2 col-sm-4 col-10 mx-auto">
+                <div class="footer-title">
+                  <h3>فروشگاه آلورا</h3>
+                </div>
+                <div class="footer-links">
+                  <a href="#">تماس با</a>
+                  <a href="#">درباره ما</a>
+                  <a href="#">مجله ها</a>
+                </div>
+              </div>
+
+              <div class="columns col-lg-3 col-sm-5 col-10 mx-auto">
+                <div class="footer-title">
+                  <h3>خدمات مشتریان</h3>
+                </div>
+                <div class="footer-links">
+                  <a href="#">قوانین استفاده از سایت</a>
+                  <a href="#">نحوه پیگیری سفارش </a>
+                  <a href="#">شرایط بازگشت کالا</a>
+                  <a href="#">روش های پرداخت</a>
+                </div>
+              </div>
+
+              <div class="columns col-lg-4 col-sm-7 col-10 mx-auto">
+                <div>
+                  <div class="footer-title">
+                    <h3>
+                      با عضویت در خبرنامه آلورا از آخرین تخفیفات با خبر شوید
+                    </h3>
+                  </div>
+                  <div class="footer-login">
+                    <form action="">
+                      <div class="input-group">
+                        <button type="button">ثبت نام</button>
+                        <input
+                          type="text"
+                          placeholder="ایمیل خود را وارد کنید"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="social-icon">
+                  <a
+                    href="#"
+                    class="icon"
+                    title="social-media-instagram"
+                    target="_blank"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="icon"
+                    title="social-media-telegram"
+                    target="_blank"
+                  >
+                    <i class="fab fa-telegram-plane"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="icon"
+                    title="social-media-whatsapp"
+                    target="_blank"
+                  >
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="foorer-bottem">
+            <div class="text-center">
+              <p class="text-light">
+                کیه حقوق مادی و معنی این سایت متعلق به فروشگاه آلورا میباشد
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+
+  <script type="text/javascript" src="Js/bootstrap.js"></script>
+  <script type="text/javascript" src="Js/script.js"></script>
+</html>
